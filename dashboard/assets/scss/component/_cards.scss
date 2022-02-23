@@ -1,0 +1,11 @@
+.card-wrapper {
+  .card {
+    width: $card-width;
+    height: 250px;
+    border: 1px solid;
+    padding: 16px;
+    .card-title{
+        border-bottom: 1px solid;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+.h-70 {
+  height: 70%;
+}
+.h-20 {
+  height: 20%;
+}
+.graph {
+  width: 28%;
+  border: 1px solid;
+  margin-left: 32px;
+  .bar-graph {
+    height: 200px;
+  }
+  .bar-container {
+    // background-color: rgb(143, 74, 74);
+    height: 100%;
+    width: 8px;
+    position: relative;
+    .inner-bar {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      // background-color: rgb(5, 110, 40);
+    }
+    .bar {
+      &-view {
+        background-color: rgb(165, 136, 5);
+      }
+      &-sells {
+        background-color: rgb(16, 5, 165);
+      }
+    }
+  }
+}
