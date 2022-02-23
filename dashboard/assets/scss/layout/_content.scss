@@ -1,3 +1,11 @@
 .content-wrapper{
+    background-color: $bg-color;
     padding: $content-wrapper-padding;
+    overflow: auto;
+    .statestics{
+        margin-top: 32px;
+    }
+}
+.main-wrapper{
+    overflow: hidden;
 }

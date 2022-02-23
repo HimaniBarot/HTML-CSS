@@ -112,20 +112,44 @@ a {
   padding: 8px;
 }
 
-.header .searchBox {
+.header .form-control {
   width: 300px;
   padding: 8px;
+  border: none;
+  background-color: #f8f8f8;
+  outline: none;
+}
+
+.search-wrapper .input-wrap {
+  border: 1px solid #e2e2e2;
+  background-color: #f8f8f8;
 }
 
 .card-wrapper .card {
   width: 23%;
+  background-color: #ffffff;
   height: 250px;
-  border: 1px solid;
   padding: 16px;
 }
 
 .card-wrapper .card .card-title {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.card-wrapper .card:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #438ffe;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.icon {
+  color: #abb1bf;
+}
+
+.icon:hover, .icon:active {
+  color: #438ffe;
 }
 
 table,
@@ -173,10 +197,6 @@ td {
   background-color: #1005a5;
 }
 
-.content-wrapper {
-  padding: 20px;
-}
-
 .wrapper {
   overflow: hidden;
 }
@@ -187,9 +207,37 @@ td {
   border-bottom: 1px solid #e2e2e2;
 }
 
+.header-left .brand-logo {
+  width: 100px;
+}
+
+.header-left .search-wrapper {
+  width: 500px;
+  margin-left: 40px;
+}
+
 .aside .aside-nav {
-  width: 70px;
+  width: 100px;
+  padding: 36px 0;
   border-right: 1px solid #e2e2e2;
+}
+
+.aside .aside-nav .nav-list {
+  padding: 0 40px;
+}
+
+.content-wrapper {
+  background-color: #f8f8f8;
+  padding: 20px;
+  overflow: auto;
+}
+
+.content-wrapper .statestics {
+  margin-top: 32px;
+}
+
+.main-wrapper {
+  overflow: hidden;
 }
 
 .text-center {

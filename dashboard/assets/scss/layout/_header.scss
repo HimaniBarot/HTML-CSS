@@ -6,3 +6,12 @@
     padding: $header-padding;
     border-bottom: $header-border-bottom;
 }
+.header-left{
+    .brand-logo{
+        width: $brand-logo-width;
+    }
+    .search-wrapper{
+        width: $searchBox-wrapper-width;
+        margin-left: $searchBox-wrapper-margin-left;
+    }
+}

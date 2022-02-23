@@ -1,4 +1,13 @@
-.header .searchBox{
+.header .form-control{
     width: $searchBox-width;
     padding: $searchBox-padding;
+    border: none;
+    background-color: $bg-color;
+    outline: none;
+}
+.search-wrapper{
+    .input-wrap{
+        border: 1px solid $border-color;
+        background-color: $bg-color;
+    }
 }

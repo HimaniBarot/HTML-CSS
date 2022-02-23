@@ -1,11 +1,18 @@
 .card-wrapper {
   .card {
     width: $card-width;
+    background-color: $card-bg;
     height: 250px;
-    border: 1px solid;
     padding: 16px;
     .card-title{
-        border-bottom: 1px solid;
+        border-bottom: 1px solid $border-color;
+    }
+    &:hover{
+      cursor: pointer;
+      color: $card-hover-text-color;
+      background-color: $card-hover-bg;
+      transition: all 0.4s ease-in-out;
     }
   }
+  
 }

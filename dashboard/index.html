@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/icomoon/style.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <title>Dashboard</title>
 </head>
@@ -15,30 +16,31 @@
         <!-- Start : HEADER -->
         <header class="header">
             <nav class="header-nav d-flex w-100 align-center justify-space-between">
-                <ul class="nav-list d-flex align-center">
-                    <li class="nav-item">
+                <div class="header-left d-flex">
+                    <div class="brand-logo">
                         <a class="nav-link brand-title">Logo</a>
-                    </li>
-                    <li class="nav-item">
-                        <input class="searchBox" type="text" placeholder="Search">
-                    </li>
-                    <li class="nav-item">
+                    </div>
+                    <div class="search-wrapper d-flex">
+                        <div class="input-wrap d-flex align-center">
+                            <label for="searchBox"><span class="icon icon-search"></span></label>
+                            <input id="searchBox" class="form-control" type="text" placeholder="Search">
+                        </div>
                         <button class="btn btn-primary">Search</button>
-                    </li>
-                </ul>
-                <ul class="d-flex align-center">
-                    <li class="nav-item">
-                        <a class="nav-link"><span>1</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"><span>2</span></a>
-                    </li>
-                    <li class="nav-item">
+                    </div>
+                </div>
+                <div class="header-right d-flex">
+                    <span>
+                        <a class="nav-link"><span class="icon icon-message"></span></a>
+                    </span>
+                    <span>
+                        <a class="nav-link"><span class="icon icon-notification_bell"></span></a>
+                    </span>
+                    <span>
                         <figure>
                             <img src="" alt="Profile">
                         </figure>
-                    </li>
-                </ul>
+                    </span>
+                </div>
             </nav>
         </header>
         <!-- End : HEADER -->
@@ -47,19 +49,48 @@
         <section class="main-wrapper w-100 d-flex flex-grow-1">
             <!-- Start : Sidebar -->
             <aside class="aside">
-                <!-- give width -->
-                <nav class="aside-nav h-100 d-flex flex-column align-center">
-                    <ul class="flex-grow-1">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>3</li>
-                    </ul>
-                    <ul class="nav-list sidebar-footer">
-                        <li>1</li>
-                        <li>2</li>
-                    </ul>
-                </nav>
+                <div class="aside-nav h-100 d-flex flex-column">
+                    <!-- upper nav -->
+                    <nav class="nav flex-grow-1">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="#">
+                                    <span class="icon active icon-radix_dashboard"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon icon-cart"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon icon-notepad"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon icon-settings"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- bottom nav -->
+                    <nav class="nav">
+                        <ul class="nav-list sidebar-footer">
+                            <li>
+                                <a href="#">
+                                    <span class="icon icon-exclamation"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon icon-logout"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </aside>
             <!-- End : Sidebar -->
 
@@ -71,8 +102,8 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="d-flex justify-space-between">
-                                <span>1</span>
-                                <span>2</span>
+                                <span class="icon-eye"></span>
+                                <span class="icon-show_chart"></span>
                             </div>
                             <div class="card-title">
                                 <h2 class="card-text">Total Views</h2>
@@ -83,33 +114,39 @@
                     </div>
                     <div class="card">
                         <div class="card-body px-2">
-                            <span>1</span>
-                            <span>2</span>
-                            <div class="card-title">
-                                <h2 class="card-text">Total Views</h2>
-                                <span>308.402</span>
+                            <div class="d-flex justify-space-between">
+                                <span class="icon-shopping_bag"></span>
+                                <span class="icon-show_chart"></span>
                             </div>
-                            <span class="card-text">Start from 1 Jan 2021</span>
+                            <div class="card-title">
+                                <h2 class="card-text">Total Products</h2>
+                                <span>10.820</span>
+                            </div>
+                            <span class="card-text">+ Add New Product</span>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-body px-2">
-                            <span>1</span>
-                            <span>2</span>
-                            <div class="card-title">
-                                <h2 class="card-text">Total Views</h2>
-                                <span>308.402</span>
+                            <div class="d-flex justify-space-between">
+                                <span class="icon-multi_user"></span>
+                                <span class="icon-show_chart"></span>
                             </div>
-                            <span class="card-text">Start from 1 Jan 2021</span>
+                            <div class="card-title">
+                                <h2 class="card-text">Total Users</h2>
+                                <span>8.425</span>
+                            </div>
+                            <span class="card-text">New user noted every week</span>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-body px-2">
-                            <span>1</span>
-                            <span>2</span>
+                            <div class="d-flex justify-space-between">
+                                <span class="icon-cart"></span>
+                                <span class="icon-show_chart"></span>
+                            </div>
                             <div class="card-title">
-                                <h2 class="card-text">Total Views</h2>
-                                <span>308.402</span>
+                                <h2 class="card-text">Total Sells</h2>
+                                <span>1.028.623</span>
                             </div>
                             <span class="card-text">Start from 1 Jan 2021</span>
                         </div>
@@ -136,10 +173,31 @@
                             <tbody>
                                 <tr>
                                     <td>1</td>
+                                    <td>News Mobile App UI KIT F...</td>
+                                    <td>Active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                                <tr>
                                     <td>2</td>
+                                    <td>40+ Landing Page Temp...</td>
+                                    <td>Active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                                <tr>
                                     <td>3</td>
+                                    <td>Doctor Consultant UI KIT ...</td>
+                                    <td>Active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                                <tr>
                                     <td>4</td>
-                                    <td>5</td>
+                                    <td>Startup Illustration KIT Ve...</td>
+                                    <td>Active</td>
+                                    <td>10</td>
+                                    <td>320</td>
                                 </tr>
                             </tbody>
                         </table>
