@@ -12,64 +12,69 @@
 
 <body>
     <div class="wrapper h-100 d-flex flex-column flex-grow-1">
-        <!-- overflow-hidden -->
         <!-- Start : HEADER -->
         <header class="header">
-            <nav class="header-nav d-flex w-100 align-center justify-space-between">
+            <div class="header-nav d-flex w-100 align-center justify-space-between flex-shrink-0">
                 <div class="header-left d-flex">
-                    <div class="brand-logo">
-                        <a class="nav-link brand-title">Logo</a>
+                    <div class="brand-logo d-flex align-center justify-center">
+                        <a class="nav-link brand-title"><span class="logo-icon icon-square"></span></a>
                     </div>
                     <div class="search-wrapper d-flex">
                         <div class="input-wrap d-flex align-center">
-                            <label for="searchBox"><span class="icon icon-search"></span></label>
+                            <label class="d-flex align-center justify-center" for="searchBox"><span
+                                    class="icon icon-search"></span></label>
                             <input id="searchBox" class="form-control" type="text" placeholder="Search">
                         </div>
                         <button class="btn btn-primary">Search</button>
                     </div>
                 </div>
-                <div class="header-right d-flex">
-                    <span>
+                <nav class="header-right d-flex align-center">
+                    <div>
+                        <span class="icon-badge"></span>
                         <a class="nav-link"><span class="icon icon-message"></span></a>
-                    </span>
-                    <span>
+                    </div>
+                    <div>
+                        <span class="icon-badge"></span>
                         <a class="nav-link"><span class="icon icon-notification_bell"></span></a>
-                    </span>
-                    <span>
-                        <figure>
+                    </div>
+                    <div>
+                        <figure class="img">
+                            <!-- <img src="assets/img/user.png" alt="Profile"> -->
                             <img src="" alt="Profile">
                         </figure>
-                    </span>
-                </div>
-            </nav>
+                    </div>
+                </nav>
+            </div>
         </header>
         <!-- End : HEADER -->
 
-        <!-- Start : Main section -->
+        <!-- Start : Main wrapper -->
         <section class="main-wrapper w-100 d-flex flex-grow-1">
             <!-- Start : Sidebar -->
+            <input type="checkbox" id="checkBox" hidden />
             <aside class="aside">
-                <div class="aside-nav h-100 d-flex flex-column">
+                <label for="checkBox"><span class="arrow icon-keyboard_arrow_right"></span></label>
+                <div class="aside-nav h-100 d-flex flex-column align-center">
                     <!-- upper nav -->
                     <nav class="nav flex-grow-1">
                         <ul class="nav-list">
-                            <li>
-                                <a href="#">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
                                     <span class="icon active icon-radix_dashboard"></span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
                                     <span class="icon icon-cart"></span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
                                     <span class="icon icon-notepad"></span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
                                     <span class="icon icon-settings"></span>
                                 </a>
                             </li>
@@ -78,13 +83,13 @@
                     <!-- bottom nav -->
                     <nav class="nav">
                         <ul class="nav-list sidebar-footer">
-                            <li>
-                                <a href="#">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
                                     <span class="icon icon-exclamation"></span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
                                     <span class="icon icon-logout"></span>
                                 </a>
                             </li>
@@ -97,116 +102,136 @@
             <!-- Start : Main -->
             <main class="content-wrapper flex-grow-1">
                 <h1>Dashboard</h1>
-                <!-- Start : Card -->
-                <div class="card-wrapper d-flex justify-space-between">
+                <!-- Start : Cards -->
+                <div class="card-wrapper d-flex">
                     <div class="card">
                         <div class="card-body">
-                            <div class="d-flex justify-space-between">
-                                <span class="icon-eye"></span>
-                                <span class="icon-show_chart"></span>
+                            <div class="card-icon-wrapper d-flex justify-space-between">
+                                <span class="card-icon card-icon-1 icon-eye"></span>
+                                <span class="card-icon icon-show_chart"></span>
                             </div>
                             <div class="card-title">
                                 <h2 class="card-text">Total Views</h2>
-                                <span>308.402</span>
+                                <span class="count">308.402</span>
                             </div>
-                            <span class="card-text">Start from 1 Jan 2021</span>
+                            <p class="card-footer card-text">Start from 1 Jan 2021</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-body px-2">
-                            <div class="d-flex justify-space-between">
-                                <span class="icon-shopping_bag"></span>
-                                <span class="icon-show_chart"></span>
+                            <div class="card-icon-wrapper d-flex justify-space-between">
+                                <span class="card-icon card-icon-2 icon-shopping_bag"></span>
+                                <span class="card-icon icon-show_chart"></span>
                             </div>
                             <div class="card-title">
                                 <h2 class="card-text">Total Products</h2>
-                                <span>10.820</span>
+                                <span class="count">10.820</span>
                             </div>
-                            <span class="card-text">+ Add New Product</span>
+                            <p class="card-footer text-primary">+ Add New Product</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-body px-2">
-                            <div class="d-flex justify-space-between">
-                                <span class="icon-multi_user"></span>
-                                <span class="icon-show_chart"></span>
+                            <div class="card-icon-wrapper d-flex justify-space-between">
+                                <span class="card-icon card-icon-3 icon-multi_user"></span>
+                                <span class="card-icon icon-show_chart"></span>
                             </div>
                             <div class="card-title">
                                 <h2 class="card-text">Total Users</h2>
-                                <span>8.425</span>
+                                <span class="count">8.425</span>
                             </div>
-                            <span class="card-text">New user noted every week</span>
+                            <p class="card-footer card-text">New user noted every week</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-body px-2">
-                            <div class="d-flex justify-space-between">
-                                <span class="icon-cart"></span>
-                                <span class="icon-show_chart"></span>
+                            <div class="card-icon-wrapper d-flex justify-space-between">
+                                <span class="card-icon card-icon-4 icon-cart"></span>
+                                <span class="card-icon icon-show_chart"></span>
                             </div>
                             <div class="card-title">
                                 <h2 class="card-text">Total Sells</h2>
-                                <span>1.028.623</span>
+                                <span class="count">1.028.623</span>
                             </div>
-                            <span class="card-text">Start from 1 Jan 2021</span>
+                            <p class="card-footer card-text">Start from 1 Jan 2021</p>
                         </div>
                     </div>
                 </div>
-                <!-- End : Card -->
+                <!-- End : Cards -->
 
                 <!-- Start : statestics -->
                 <div class="statestics d-flex justify-space-between">
-
                     <!-- Start : Table -->
+                    <div class="table-wrapper flex-grow-1">
+                        <div class="table-content-wrapper">
+                            <table class="table w-100">
+                                <thead>
+                                    <tr>
+                                        <th class="col">No</th>
+                                        <th class="col"></th>
+                                        <th class="col">Product Name</th>
+                                        <th class="col">Status</th>
+                                        <th class="col">Sold</th>
+                                        <th class="col">View</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-row">
+                                        <td class="table-cell">1</td>
+                                        <td class="table-cell">
+                                            <figure class="img table-img">
+                                                <img src="assets/img/user.png" alt="User">
+                                            </figure>
+                                        </td>
+                                        <td class="table-cell">News Mobile App UI KIT F...</td>
+                                        <td class="table-cell">Active</td>
+                                        <td class="table-cell">10</td>
+                                        <td class="table-cell">320</td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td class="table-cell">2</td>
+                                        <td class="table-cell">
+                                            <figure class="img table-img">
+                                                <img src="assets/img/user.png" alt="User">
+                                            </figure>
+                                        </td>
+                                        <td class="table-cell">40+ Landing Page Temp...</td>
+                                        <td class="table-cell">Active</td>
+                                        <td class="table-cell">10</td>
+                                        <td class="table-cell">320</td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td class="table-cell">3</td>
+                                        <td class="table-cell">
+                                            <figure class="img table-img">
+                                                <img src="assets/img/user.png" alt="User">
+                                            </figure>
+                                        </td>
+                                        <td class="table-cell">Doctor Consultant UI KIT ...</td>
+                                        <td class="table-cell">Active</td>
+                                        <td class="table-cell">10</td>
+                                        <td class="table-cell">320</td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td class="table-cell">4</td>
+                                        <td class="table-cell">
+                                            <figure class="img table-img">
+                                                <img src="assets/img/user.png" alt="User">
+                                            </figure>
+                                        </td>
+                                        <td class="table-cell">Startup Illustration KIT Ve...</td>
+                                        <td class="table-cell">Active</td>
+                                        <td class="table-cell">10</td>
+                                        <td class="table-cell">320</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                    <div class="table flex-grow-1">
-                        <table class="w-100">
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Product Name</th>
-                                    <th>Status</th>
-                                    <th>Sold</th>
-                                    <th>View</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>News Mobile App UI KIT F...</td>
-                                    <td>Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>40+ Landing Page Temp...</td>
-                                    <td>Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Doctor Consultant UI KIT ...</td>
-                                    <td>Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Startup Illustration KIT Ve...</td>
-                                    <td>Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
-
                     <!-- End : Table -->
 
                     <!-- Start : Graph -->
-
                     <div class="graph">
                         <h5>View & Sells</h5>
                         <small>This Week</small>
@@ -237,14 +262,13 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- End : Graph -->
                 </div>
                 <!-- End : statestics -->
             </main>
-            <!-- Start : Main -->
+            <!-- End : Main -->
         </section>
-        <!-- End : Main section -->
+        <!-- End : Main wrapper -->
     </div>
 </body>
 

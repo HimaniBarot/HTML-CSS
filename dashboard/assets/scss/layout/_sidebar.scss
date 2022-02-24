@@ -1,10 +1,15 @@
 .aside {
+  position: relative;
   .aside-nav {
     width: $sidebar-width;
     padding: $aside-nav-padding;
-    border-right: $sidebar-border;
-    .nav-list{
-      padding: $nav-list-padding;
+    .nav- {
+      &list {
+        padding: $nav-list-padding;
+      }
+      &item{
+        margin-bottom: 32px;
+      }
     }
   }
 }

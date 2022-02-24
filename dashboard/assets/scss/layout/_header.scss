@@ -1,17 +1,36 @@
-.wrapper{
-    overflow: hidden;
+.wrapper {
+  overflow: hidden;
 }
-.header-nav{
+.header {
+  .header-nav {
     height: $header-height;
-    padding: $header-padding;
+    // padding: $header-padding;
     border-bottom: $header-border-bottom;
-}
-.header-left{
-    .brand-logo{
+    .header-left {
+      .brand-logo {
         width: $brand-logo-width;
-    }
-    .search-wrapper{
+      }
+      .search-wrapper {
         width: $searchBox-wrapper-width;
         margin-left: $searchBox-wrapper-margin-left;
+      }
     }
+    .header-right {
+      margin-right: 8px;
+      position: relative;
+      div {
+        margin-right: $header-right-margin;
+      }
+
+      // .icon-badge {
+      //   position: absolute;
+      //   top: -6px;
+      //   right: -2px;
+      //   width: 3px;
+      //   height: 3px;
+      //   border-radius: 50%;
+      //   background-color: red;
+      // }
+    }
+  }
 }

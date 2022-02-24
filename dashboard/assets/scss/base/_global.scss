@@ -10,9 +10,10 @@ html {
   line-height: 1.6;
 }
 body {
+  color: $body-color;
+  font-size: $base-font-size;
+  font-family: $font-family;
   overflow: hidden;
-  font-size: 1rem;
-  font-family: "Josefin Sans", sans-serif;
 }
 
 // start: common
@@ -24,6 +25,14 @@ body {
   width: 100%;
 }
 
+// Height
+.h-70 {
+  height: 70%;
+}
+.h-20 {
+  height: 20%;
+}
+
 // start: flex proporties
 .d-flex {
   display: flex;
@@ -32,8 +41,8 @@ body {
   align-items: center;
 }
 .flex {
-  &-shrink-1 {
-    flex-shrink: 1;
+  &-shrink-0 {
+    flex-shrink: 0;
   }
   &-grow-1 {
     flex-grow: 1;
@@ -72,13 +81,7 @@ ul {
 // anchor tag
 a {
   text-decoration: none;
-}
-
-.w-50{
-  width: 50%;
-}
-.w-20{
-  width: 20%;
+  cursor: pointer;
 }
 
 

@@ -1,12 +1,55 @@
 // basic colors
-$primary : #438ffe;
+$primary: #438ffe;
+$success: #8bc38a;
 
-$border-color : #e2e2e2;
+$orange: #fe764b;
+$white: #ffffff;
+$info: #83bcbd;
+
+// Body
+$body-color: #160e4d; 
 
 // background
-$bg-color : #f8f8f8;
+$bg-color: #f8f8f8;
+
+// text
+$text-gray: #abb1bf;
+$text-primary : $primary;
+
+// Icon
+$icon-color : $text-gray;
+$logo-icon-box-shadow : 3px -3px #438ffe96;
+
+// border color
+$border-color: #e2e2e2;
+
+// Buttons
+$btn-text-color: $white;
 
 // card
-$card-bg : #ffffff;
-$card-hover-text-color : #ffffff;
-$card-hover-bg : #438ffe;
+$card-bg: $white;
+$card-hover-text-color: $white;
+$card-hover-bg: $primary;
+
+// Card icon
+$card-icon-1: $primary;
+$card-icon-2: $success;
+$card-icon-3: $primary;
+$card-icon-4: $success;
+
+$card-icon-colors : (
+  "card-icon-1": $primary,
+  "card-icon-2" : $success,
+  "card-icon-3" : $primary,
+  "card-icon-4" : $success
+);
+
+
+// Theme
+$theme-colors: (
+  "primary": $primary,
+  "text-muted" : $text-gray,
+  "success" : $success,
+  "orange" : $orange,
+  "info" : $info
+);

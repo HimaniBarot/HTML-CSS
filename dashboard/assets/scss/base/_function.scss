@@ -1,0 +1,35 @@
+// color classes map
+
+// Text
+@each $key, $clr in $theme-colors {
+  .text-#{$key} {
+    color: $clr;
+  }
+}
+
+// Buttons
+@each $key, $clr in $theme-colors {
+  .btn-#{$key} {
+    color: $btn-text-color;
+    background-color: $clr;
+  }
+}
+// Icons
+@each $key, $clr in $theme-colors {
+  .icon-#{$key} {
+    color: $icon-color;
+    background-color: $clr;
+  }
+}
+
+// Card Icons
+@each $key, $clr in $card-icon-colors {
+  .#{$key} {
+    color: $clr;
+    background-color: lighten($clr, 30%);
+    &:hover {
+      color: $clr;
+      background-color: lighten($clr, 5%);
+    }
+  }
+}

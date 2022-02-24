@@ -1,18 +1,44 @@
 .card-wrapper {
+  // margin-left: -15px;
+  margin: 32px 0 0 -15px;
   .card {
     width: $card-width;
-    background-color: $card-bg;
     height: 250px;
-    padding: 16px;
-    .card-title{
-        border-bottom: 1px solid $border-color;
-    }
-    &:hover{
-      cursor: pointer;
-      color: $card-hover-text-color;
-      background-color: $card-hover-bg;
-      transition: all 0.4s ease-in-out;
+    // margin: 0 15px 15px;
+    padding-left: 15px;
+    .card- {
+      &body {
+        padding: $card-body-padding;
+        background-color: $card-bg;
+        
+        .card-icon-wrapper {
+          margin-bottom: 20px;
+        }
+        .card-icon {
+          width: 60px;
+          height: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.5rem;
+        }
+      }
+      &title {
+        border-bottom: $border;
+        padding-bottom: 16px;
+        .count {
+          font-size: 2rem;
+          margin-bottom: 30px;
+        }
+      }
+      &text {
+        color: $text-gray;
+        font-size: $base-font-size;
+        // margin-bottom: 1rem;
+      }
+      &footer {
+        padding-top: 16px;
+      }
     }
   }
-  
 }

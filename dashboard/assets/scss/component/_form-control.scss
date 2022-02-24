@@ -1,13 +1,25 @@
-.header .form-control{
-    width: $searchBox-width;
-    padding: $searchBox-padding;
-    border: none;
-    background-color: $bg-color;
-    outline: none;
+.header .form-control {
+  width: $searchBox-width;
+  padding: $searchBox-padding;
+  background-color: $bg-color;
+  border: $border-style-none;
+  outline: $border-style-none;
 }
-.search-wrapper{
-    .input-wrap{
-        border: 1px solid $border-color;
-        background-color: $bg-color;
+.search-wrapper {
+  label {
+    width: 16px;
+    margin: 0 8px;
+  }
+  .input-wrap {
+    background-color: $bg-color;
+
+    #searchBox {
+      &::placeholder {
+        color: $text-gray;
+      }
+      &:focus{
+          box-shadow: 1px 1px 20px blue;
+      }
     }
+  }
 }

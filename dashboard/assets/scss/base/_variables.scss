@@ -1,11 +1,27 @@
+// Base Font style
+$font-family:"Josefin Sans", sans-serif;
+$base-font-size : 1rem; 
+
+// Side width
+$side-width: 80px;
+
+// Border
+$border-style-none : none;
+$border: 1px solid $border-color;
+
 // Button
 $button-padding : 8px;
+$button-border: $border-style-none;
+
+// Icon
+$icon-size : 20px;
 
 // Header
 $header-height : 70px;
 $header-padding : 0 20px;
-$header-border-bottom : 1px solid $border-color;
-$brand-logo-width: 100px;
+$header-right-margin: 20px;
+$header-border-bottom : $border;
+$brand-logo-width: $side-width;
 
 $searchBox-width : 300px;
 $searchBox-padding : 8px;
@@ -13,8 +29,7 @@ $searchBox-wrapper-width: 500px;
 $searchBox-wrapper-margin-left: 40px;
 
 // Sidebar
-$sidebar-width : 100px;
-$sidebar-border: 1px solid $border-color;
+$sidebar-width : $side-width;
 
 $nav-list-padding: 0 40px;
 $aside-nav-padding : 36px 0;
@@ -23,4 +38,5 @@ $aside-nav-padding : 36px 0;
 $content-wrapper-padding: 20px;
 
 // Card
-$card-width: 23%;
+$card-width: 25%;
+$card-body-padding: 16px;

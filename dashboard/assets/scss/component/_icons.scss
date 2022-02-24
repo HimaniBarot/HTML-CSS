@@ -1,7 +1,22 @@
-.icon{
-    color: #abb1bf;
-    &:hover,
-    &:active{
-        color: #438ffe;
-    }
+.icon {
+  font-size: $icon-size;
+  color: $icon-color;
+  &:hover,
+  &:active {
+    color: $primary;
+  }
+}
+.logo-icon {
+  font-size: $icon-size;
+  color: $primary;
+  background-color: $primary;
+  box-shadow: $logo-icon-box-shadow;
+}
+
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 92%;
 }

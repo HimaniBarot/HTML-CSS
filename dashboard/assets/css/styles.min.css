@@ -1,4 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap");
+.text-primary {
+  color: #438ffe;
+}
+
+.text-text-muted {
+  color: #abb1bf;
+}
+
+.text-success {
+  color: #8bc38a;
+}
+
+.text-orange {
+  color: #fe764b;
+}
+
+.text-info {
+  color: #83bcbd;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #438ffe;
+}
+
+.btn-text-muted {
+  color: #ffffff;
+  background-color: #abb1bf;
+}
+
+.btn-success {
+  color: #ffffff;
+  background-color: #8bc38a;
+}
+
+.btn-orange {
+  color: #ffffff;
+  background-color: #fe764b;
+}
+
+.btn-info {
+  color: #ffffff;
+  background-color: #83bcbd;
+}
+
+.icon-primary {
+  color: #abb1bf;
+  background-color: #438ffe;
+}
+
+.icon-text-muted {
+  color: #abb1bf;
+  background-color: #abb1bf;
+}
+
+.icon-success {
+  color: #abb1bf;
+  background-color: #8bc38a;
+}
+
+.icon-orange {
+  color: #abb1bf;
+  background-color: #fe764b;
+}
+
+.icon-info {
+  color: #abb1bf;
+  background-color: #83bcbd;
+}
+
+.card-icon-1 {
+  color: #438ffe;
+  background-color: #dbeaff;
+}
+
+.card-icon-1:hover {
+  color: #438ffe;
+  background-color: #5c9efe;
+}
+
+.card-icon-2 {
+  color: #8bc38a;
+  background-color: #eff7ef;
+}
+
+.card-icon-2:hover {
+  color: #8bc38a;
+  background-color: #9ccc9b;
+}
+
+.card-icon-3 {
+  color: #438ffe;
+  background-color: #dbeaff;
+}
+
+.card-icon-3:hover {
+  color: #438ffe;
+  background-color: #5c9efe;
+}
+
+.card-icon-4 {
+  color: #8bc38a;
+  background-color: #eff7ef;
+}
+
+.card-icon-4:hover {
+  color: #8bc38a;
+  background-color: #9ccc9b;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +124,10 @@ html {
 }
 
 body {
-  overflow: hidden;
+  color: #160e4d;
   font-size: 1rem;
   font-family: "Josefin Sans", sans-serif;
+  overflow: hidden;
 }
 
 .h-100 {
@@ -25,6 +136,14 @@ body {
 
 .w-100 {
   width: 100%;
+}
+
+.h-70 {
+  height: 70%;
+}
+
+.h-20 {
+  height: 20%;
 }
 
 .d-flex {
@@ -39,9 +158,9 @@ body {
           align-items: center;
 }
 
-.flex-shrink-1 {
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
+.flex-shrink-0 {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .flex-grow-1 {
@@ -98,53 +217,108 @@ ul li {
 
 a {
   text-decoration: none;
-}
-
-.w-50 {
-  width: 50%;
-}
-
-.w-20 {
-  width: 20%;
+  cursor: pointer;
 }
 
 .btn {
   padding: 8px;
+  border: none;
+  cursor: pointer;
 }
 
 .header .form-control {
   width: 300px;
   padding: 8px;
-  border: none;
   background-color: #f8f8f8;
+  border: none;
   outline: none;
 }
 
+.search-wrapper label {
+  width: 16px;
+  margin: 0 8px;
+}
+
 .search-wrapper .input-wrap {
-  border: 1px solid #e2e2e2;
   background-color: #f8f8f8;
 }
 
+.search-wrapper .input-wrap #searchBox::-webkit-input-placeholder {
+  color: #abb1bf;
+}
+
+.search-wrapper .input-wrap #searchBox:-ms-input-placeholder {
+  color: #abb1bf;
+}
+
+.search-wrapper .input-wrap #searchBox::-ms-input-placeholder {
+  color: #abb1bf;
+}
+
+.search-wrapper .input-wrap #searchBox::placeholder {
+  color: #abb1bf;
+}
+
+.search-wrapper .input-wrap #searchBox:focus {
+  -webkit-box-shadow: 1px 1px 20px blue;
+          box-shadow: 1px 1px 20px blue;
+}
+
+.card-wrapper {
+  margin: 32px 0 0 -15px;
+}
+
 .card-wrapper .card {
-  width: 23%;
-  background-color: #ffffff;
+  width: 25%;
   height: 250px;
+  padding-left: 15px;
+}
+
+.card-wrapper .card .card-body {
   padding: 16px;
+  background-color: #ffffff;
+}
+
+.card-wrapper .card .card-body .card-icon-wrapper {
+  margin-bottom: 20px;
+}
+
+.card-wrapper .card .card-body .card-icon {
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
 }
 
 .card-wrapper .card .card-title {
   border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 16px;
 }
 
-.card-wrapper .card:hover {
-  cursor: pointer;
-  color: #ffffff;
-  background-color: #438ffe;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+.card-wrapper .card .card-title .count {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.card-wrapper .card .card-text {
+  color: #abb1bf;
+  font-size: 1rem;
+}
+
+.card-wrapper .card .card-footer {
+  padding-top: 16px;
 }
 
 .icon {
+  font-size: 20px;
   color: #abb1bf;
 }
 
@@ -152,19 +326,44 @@ a {
   color: #438ffe;
 }
 
-table,
-th,
-td {
-  border: 1px solid;
-  border-collapse: collapse;
+.logo-icon {
+  font-size: 20px;
+  color: #438ffe;
+  background-color: #438ffe;
+  -webkit-box-shadow: 3px -3px #438ffe96;
+          box-shadow: 3px -3px #438ffe96;
 }
 
-.h-70 {
-  height: 70%;
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 92%;
 }
 
-.h-20 {
-  height: 20%;
+.table-wrapper {
+  background-color: #ffffff;
+}
+
+.table-wrapper .table-content-wrapper {
+  padding: 2rem;
+}
+
+.table {
+  border-spacing: 0;
+}
+
+.table .col {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.table .table-row {
+  background-color: #f8f8f8;
+}
+
+.table .table-cell {
+  padding: 16px;
+  border-bottom: 10px solid white;
 }
 
 .graph {
@@ -197,33 +396,56 @@ td {
   background-color: #1005a5;
 }
 
+.img {
+  width: 50px;
+}
+
+.img img {
+  width: 100%;
+}
+
 .wrapper {
   overflow: hidden;
 }
 
-.header-nav {
+.header .header-nav {
   height: 70px;
-  padding: 0 20px;
   border-bottom: 1px solid #e2e2e2;
 }
 
-.header-left .brand-logo {
-  width: 100px;
+.header .header-nav .header-left .brand-logo {
+  width: 80px;
 }
 
-.header-left .search-wrapper {
+.header .header-nav .header-left .search-wrapper {
   width: 500px;
   margin-left: 40px;
 }
 
+.header .header-nav .header-right {
+  margin-right: 8px;
+  position: relative;
+}
+
+.header .header-nav .header-right div {
+  margin-right: 20px;
+}
+
+.aside {
+  position: relative;
+}
+
 .aside .aside-nav {
-  width: 100px;
+  width: 80px;
   padding: 36px 0;
-  border-right: 1px solid #e2e2e2;
 }
 
 .aside .aside-nav .nav-list {
   padding: 0 40px;
+}
+
+.aside .aside-nav .nav-item {
+  margin-bottom: 32px;
 }
 
 .content-wrapper {
