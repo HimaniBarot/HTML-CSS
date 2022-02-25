@@ -2,12 +2,15 @@
 $primary: #438ffe;
 $success: #8bc38a;
 
-$orange: #fe764b;
+$danger: #fe764b;
 $white: #ffffff;
 $info: #83bcbd;
 
 // Body
 $body-color: #160e4d; 
+
+// Table
+$tr-bg : #f5f7f9;
 
 // background
 $bg-color: #f8f8f8;
@@ -28,20 +31,22 @@ $btn-text-color: $white;
 
 // card
 $card-bg: $white;
-$card-hover-text-color: $white;
-$card-hover-bg: $primary;
+$card-1: $primary;
+$card-2: $success;
+$card-3: $primary;
+$card-4: $info;
 
 // Card icon
-$card-icon-1: $primary;
-$card-icon-2: $success;
-$card-icon-3: $primary;
-$card-icon-4: $success;
+$icon-chart-up : $success;
+$icon-chart-down : $danger;
 
-$card-icon-colors : (
-  "card-icon-1": $primary,
-  "card-icon-2" : $success,
-  "card-icon-3" : $primary,
-  "card-icon-4" : $success
+$card-theme-colors : (
+  "card-1": $card-1,
+  "card-2" : $card-2,
+  "card-3" : $card-3,
+  "card-4" : $card-4,
+  "icon-chart-up" : $icon-chart-up,
+  "icon-chart-down" : $icon-chart-down
 );
 
 
@@ -50,6 +55,6 @@ $theme-colors: (
   "primary": $primary,
   "text-muted" : $text-gray,
   "success" : $success,
-  "orange" : $orange,
+  "danger" : $danger,
   "info" : $info
 );

@@ -1,12 +1,25 @@
 .graph {
   width: 28%;
-  border: 1px solid;
+  height: 300px;
   margin-left: 32px;
+  padding: 20px;
+  background-color: $white;
+
+  // Media Query Mixin
+  @include tablet-landscape{
+    width: 50%;
+    margin: 32px 0;
+  }
+
+  @include mobile{
+    width: 100%;
+    margin: 32px 0;
+  }
+
   .bar-graph {
     height: 200px;
   }
   .bar-container {
-    // background-color: rgb(143, 74, 74);
     height: 100%;
     width: 8px;
     position: relative;
@@ -14,14 +27,13 @@
       width: 100%;
       position: absolute;
       bottom: 0;
-      // background-color: rgb(5, 110, 40);
     }
     .bar {
       &-view {
-        background-color: rgb(165, 136, 5);
+        background-color: $info;
       }
       &-sells {
-        background-color: rgb(16, 5, 165);
+        background-color: $danger;
       }
     }
   }

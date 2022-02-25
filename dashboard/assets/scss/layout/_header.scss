@@ -4,33 +4,61 @@
 .header {
   .header-nav {
     height: $header-height;
-    // padding: $header-padding;
     border-bottom: $header-border-bottom;
+
+    @include mobile {
+      height: 46px;
+    }
+
     .header-left {
+      @include mobile {
+        width: 46px;
+      }
       .brand-logo {
         width: $brand-logo-width;
+
+        @include mobile {
+          font-size: 1rem;
+        }
       }
+
       .search-wrapper {
         width: $searchBox-wrapper-width;
         margin-left: $searchBox-wrapper-margin-left;
       }
     }
+
     .header-right {
-      margin-right: 8px;
-      position: relative;
+      margin-right: 32px;
       div {
         margin-right: $header-right-margin;
       }
+      .notifications {
+        position: relative;
+      }
+      .header-img {
+        width: 40px;
+        height: 40px;
 
-      // .icon-badge {
-      //   position: absolute;
-      //   top: -6px;
-      //   right: -2px;
-      //   width: 3px;
-      //   height: 3px;
-      //   border-radius: 50%;
-      //   background-color: red;
-      // }
+        @include mobile {
+          width: 24px;
+          height: 24px;
+        }
+        img {
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+
+      .notification-badge {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $danger;
+        top: 0;
+        left: 21px;
+      }
     }
   }
 }

@@ -1,22 +1,20 @@
 .icon {
   font-size: $icon-size;
   color: $icon-color;
+  display: block;
+
+  @include mobile {
+    font-size: $base-font-size;
+  }
+
   &:hover,
   &:active {
     color: $primary;
   }
 }
 .logo-icon {
-  font-size: $icon-size;
+  // font-size: $icon-size;
   color: $primary;
   background-color: $primary;
   box-shadow: $logo-icon-box-shadow;
-}
-
-
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  left: 92%;
 }

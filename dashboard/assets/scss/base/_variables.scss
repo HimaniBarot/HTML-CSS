@@ -10,8 +10,11 @@ $border-style-none : none;
 $border: 1px solid $border-color;
 
 // Button
-$button-padding : 8px;
+$button-padding : 0 16px;
 $button-border: $border-style-none;
+
+// Form control
+$form-control-bg : #f5f7f9;
 
 // Icon
 $icon-size : 20px;
@@ -35,7 +38,7 @@ $nav-list-padding: 0 40px;
 $aside-nav-padding : 36px 0;
 
 // Main
-$content-wrapper-padding: 20px;
+$content-wrapper-padding: 32px;
 
 // Card
 $card-width: 25%;

@@ -1,44 +1,117 @@
 .card-wrapper {
-  // margin-left: -15px;
-  margin: 32px 0 0 -15px;
+  margin: 32px 0 0 -30px;
+
+  // Media Query Mixin
+  @include tablet-landscape {
+    flex-wrap: wrap;
+  }
   .card {
     width: $card-width;
     height: 250px;
-    // margin: 0 15px 15px;
-    padding-left: 15px;
-    .card- {
-      &body {
-        padding: $card-body-padding;
-        background-color: $card-bg;
-        
-        .card-icon-wrapper {
-          margin-bottom: 20px;
-        }
-        .card-icon {
-          width: 60px;
-          height: 60px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 1.5rem;
-        }
+    padding-left: 30px;
+
+    // Media Query Mixin
+    @include tablet-landscape {
+      width: 50%;
+      margin-bottom: 32px;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+  .card- {
+    &body {
+      padding: $card-body-padding;
+      background-color: $white;
+      .card-icon-wrapper {
+        margin-bottom: 20px;
       }
-      &title {
-        border-bottom: $border;
-        padding-bottom: 16px;
-        .count {
-          font-size: 2rem;
-          margin-bottom: 30px;
-        }
+      .card-icon {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.68rem;
       }
-      &text {
-        color: $text-gray;
-        font-size: $base-font-size;
-        // margin-bottom: 1rem;
+      .icon-chart-up,
+      .icon-chart-down {
+        font-size: 2rem;
       }
-      &footer {
-        padding-top: 16px;
+      .icon-chart-down {
+        transform: scaleX(-1);
+      }
+    }
+    &title {
+      border-bottom: $border;
+      padding-bottom: 16px;
+      .count {
+        color: $body-color;
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+    }
+    &text {
+      color: $text-gray;
+      font-size: $base-font-size;
+      font-weight: 400;
+      &-link {
+        font-weight: 400;
+      }
+    }
+    &footer {
+      padding-top: 1rem;
+    }
+  }
+}
+
+// Cards
+@each $card, $clr in $card-theme-colors {
+  .#{$card} {
+    color: $clr;
+    // background-color: $white;
+    .icon-bg {
+      background-color: lighten($clr, 30%);
+    }
+    &:hover {
+      background-color: $clr;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      .icon-chart-up,
+      .icon-chart-down {
+        background-color: transparent;
+      }
+
+      .card-icon,
+      .card-title,
+      .card-text,
+      .count,
+      .card-footer {
+        color: $white;
+      }
+      .icon-bg {
+        background-color: lighten($clr, 5%);
       }
     }
   }
 }
+
+// Card Icons
+@each $chart-icon, $clr in $card-theme-colors {
+  .#{$chart-icon} {
+    color: $clr;
+  }
+}
+
+// media queries
+// @media (max-width: 1024px) {
+//   .card-wrapper {
+//     flex-wrap: wrap;
+//     .card {
+//       width: 50%;
+//       margin-bottom: 32px;
+//     }
+//   }
+// }

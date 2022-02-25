@@ -1,11 +1,15 @@
-.content-wrapper{
-    background-color: $bg-color;
-    padding: $content-wrapper-padding;
-    overflow: auto;
-    .statestics{
-        margin-top: 32px;
+.content-wrapper {
+  background-color: $bg-color;
+  padding: $content-wrapper-padding;
+  overflow: auto;
+  .statestics {
+    margin-top: 32px;
+
+    @include tablet-landscape {
+      flex-wrap: wrap;
     }
+  }
 }
-.main-wrapper{
-    overflow: hidden;
+.main-wrapper {
+  overflow: hidden;
 }

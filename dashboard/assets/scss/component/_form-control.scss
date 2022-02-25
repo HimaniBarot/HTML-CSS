@@ -1,24 +1,32 @@
 .header .form-control {
   width: $searchBox-width;
   padding: $searchBox-padding;
-  background-color: $bg-color;
+  background-color: $form-control-bg;
   border: $border-style-none;
   outline: $border-style-none;
+
+  // Media Query Mixin
+  @include tablet-portrait {
+    width: 200px;
+    padding: 0.25rem;
+  }
+
 }
 .search-wrapper {
+  @include mobile {
+    display: none;
+  }
   label {
     width: 16px;
-    margin: 0 8px;
+    margin: 0 .5rem;
   }
   .input-wrap {
-    background-color: $bg-color;
+    background-color: $form-control-bg;
+    padding: 0.25rem;
 
     #searchBox {
       &::placeholder {
         color: $text-gray;
-      }
-      &:focus{
-          box-shadow: 1px 1px 20px blue;
       }
     }
   }
