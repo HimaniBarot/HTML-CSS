@@ -2,11 +2,24 @@
   background-color: $bg-color;
   padding: $content-wrapper-padding;
   overflow: auto;
+
+  @include mobile {
+    // padding: 1.5rem;
+    padding: 0.76rem 1.5rem;
+  }
+  @include sm {
+    padding: 0.76rem;
+  }
+
   .statestics {
     margin-top: 32px;
 
     @include tablet-landscape {
       flex-wrap: wrap;
+    }
+
+    @include mobile {
+      margin-top: 16px;
     }
   }
 }

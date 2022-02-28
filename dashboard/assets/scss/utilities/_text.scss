@@ -3,3 +3,14 @@
 .text-center{
     text-align: center;
 }
+
+@include mobile{
+    .content-heading{
+        font-size: 1.25rem;
+    }
+  }
+@include sm{
+    .content-heading{
+        font-size: 1rem;
+    }
+  }

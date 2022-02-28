@@ -31,24 +31,33 @@
                         <button class="btn btn-primary">Search</button>
                     </div>
                 </div>
-                <nav class="header-right d-flex align-center">
-                    <div>
-                        <a class="nav-link notifications">
-                            <span class="icon icon-message"></span>
-                            <span class="notification-badge"></span>
-                        </a>
-                    </div>
-                    <div>
-                        <a class="nav-link notifications">
-                            <span class="icon icon-notification_bell"></span>
-                            <span class="notification-badge"></span>
-                        </a>
-                    </div>
-                    <div>
-                        <figure class="header-img d-flex">
-                            <img src="assets/img/td-img.jpg" alt="Profile">
-                            <!-- <img src="" alt="Profile"> -->
-                        </figure>
+                <nav class="header-right">
+                    <div class="dropdown d-flex align-center">
+                        <input type="checkbox" id="dropdown-toggle">
+                        <label class="dropdown-label" for="dropdown-toggle">
+                            <span class="icon icon-keyboard_arrow_right"></span>
+                        </label>
+                        <div class="dropdown-content d-flex align-center">
+                            <div class="notification">
+                                <a class="nav-link notifications">
+                                    <span class="icon icon-message"></span>
+                                    <span class="notification-badge"></span>
+                                </a>
+                            </div>
+                            <div class="notification">
+                                <a class="nav-link notifications">
+                                    <span class="icon icon-notification_bell"></span>
+                                    <span class="notification-badge"></span>
+                                </a>
+                            </div>
+                            <div class="notification">
+                                <figure class="header-img d-flex">
+                                    <img src="assets/img/td-img.jpg" alt="Profile">
+                                    <!-- <img src="" alt="Profile"> -->
+                                </figure>
+                            </div>
+                        </div>
+                        
                     </div>
                 </nav>
             </div>
@@ -61,7 +70,8 @@
             <input type="checkbox" id="checkBox" />
             <!-- Start : Sidebar -->
             <aside class="aside flex-shrink-0">
-                <label for="checkBox" class="checkBox-label"><span class="icon icon-keyboard_arrow_right"></span></label>
+                <label for="checkBox" class="checkBox-label"><span
+                        class="icon icon-keyboard_arrow_right"></span></label>
                 <div class="aside-nav h-100 d-flex flex-column">
                     <!-- upper nav -->
                     <nav class="nav flex-grow-1 w-100">
@@ -109,7 +119,7 @@
 
             <!-- Start : Main -->
             <main class="content-wrapper flex-grow-1">
-                <h1>Dashboard</h1>
+                <h1 class="content-heading">Dashboard</h1>
                 <!-- Start : Cards -->
                 <div class="card-wrapper d-flex">
                     <div class="card">
@@ -222,6 +232,18 @@
                                     </tr>
                                     <tr class="table-row">
                                         <td class="table-cell">4</td>
+                                        <td class="table-cell">
+                                            <figure class="img table-img">
+                                                <img src="assets/img/td-img.jpg" alt="User">
+                                            </figure>
+                                        </td>
+                                        <td class="table-cell">Startup Illustration KIT Ve...</td>
+                                        <td class="table-cell">Active</td>
+                                        <td class="table-cell">10</td>
+                                        <td class="table-cell">320</td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td class="table-cell">5</td>
                                         <td class="table-cell">
                                             <figure class="img table-img">
                                                 <img src="assets/img/td-img.jpg" alt="User">

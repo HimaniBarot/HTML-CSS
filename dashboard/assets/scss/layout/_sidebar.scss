@@ -17,7 +17,7 @@
         // padding: $nav-list-padding;
       }
       &item {
-        margin-bottom: 32px;
+        margin-bottom: 56px;
       }
     }
     .active {
@@ -26,21 +26,27 @@
   }
 }
 
+// Toggle
 .checkBox-label {
+  padding: 8px 2px;
   position: absolute;
   top: 50%;
   left: 80px;
-  padding: 8px 2px;
   background-color: #fff;
   transition: all 0.3s ease-in;
-  transform: rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+  cursor: pointer;
 
   @include mobile {
-    left: 46px;
+    left: 30px;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    @include d-flex;
   }
 }
 
-// Toggle
 #checkBox {
   display: none;
 }
@@ -48,10 +54,13 @@
   transition: all 0.3s ease-in;
   transform: translateX(-80px);
   width: 0;
-  .checkBox-label{
-    transform: rotate(0deg);
+  .checkBox-label {
+    transform: translateY(-50%) rotate(0deg);
+    @include mobile {
+      left: 46px;
+    }
   }
-  @include mobile{
+  @include mobile {
     transform: translateX(-46px);
   }
 }
