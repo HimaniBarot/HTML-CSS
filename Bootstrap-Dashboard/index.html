@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment(SCSS)</title>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/icomoon/style.css">
+</head>
+
+<body>
+    <!-- Start : Body-Wrapper -->
+    <div class="h-100 d-flex flex-column ">
+
+        <!-- Start : Header -->
+        <header class="header">
+            <div class="header-wrapper d-flex align-center">
+                <div class="brand-title flex-shrink-0">
+                    <a href="#">TallyScan</a>
+                </div>
+                
+                <div class="header-content d-flex align-center justify-space-between flex-grow-1">
+                    <!-- <label for="checkmark">
+                        <span class="icon icon-square"></span>
+                    </label> -->
+                    <div class="header-title d-flex align-center flex-shrink-0">
+                        <label for="checkmark" class="checkmark-label">
+                            <span class="icon icon-square"></span>
+                        </label>
+                        <a href="#">Dashboard</a>
+                    </div>
+                    <div class="dropdown">
+                        <nav class="nav header-nav">
+                            <ul class="nav header-nav-list d-flex align-center">
+                                <li class="header-nav-item">
+                                    <a href="#" class="header-nav-link">
+                                        <span class="icon notification icon-notification_bell"></span>
+                                    </a>
+                                </li>
+                                <li class="header-nav-item">
+                                    <a href="#" class="header-nav-link profile d-flex align-center">
+                                        <figure class="img">
+                                            <img class="w-100 h-100" src="assets/img/user.jpg" alt="Profile">
+                                        </figure>
+                                        <span class="user">John Smith</span>
+                                        <span class="icon arrow_right icon-keyboard_arrow_right"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End : Header -->
+
+        <!-- Start : Content Wrapper -->
+        <div class="content-wrapper h-100 d-flex overflow-hidden">
+            <!-- Start : Sidebar -->
+            <aside class="aside">
+                <input type="checkbox" id="checkmark" />
+                <div class="sidebar h-100 overflow-hidden">
+                    <div class="d-flex flex-column h-100 overflow-auto">
+                        <nav class="nav">
+                            <span class="nav-heading">GENERAL</span>
+                            <ul class="nav nav-list">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active">
+                                        <span class="icon side-icon icon-search"></span>
+                                        <span>Search</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <span class="icon side-icon icon-notification_bell"></span>
+                                        Alerts
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <span class="icon side-icon icon-message"></span>
+                                        <span>Tags</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="nav">
+                            <span class="nav-heading">OTHERS</span>
+                            <ul class="nav nav-list">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <span class="icon side-icon icon-settings"></span>
+                                        <span>Settings</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <span class="icon side-icon icon-exclamation"></span>
+                                        <span>Tips</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <span class="icon side-icon icon-cart"></span>
+                                        <span>Trash</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <span class="icon side-icon icon-logout"></span>
+                                        <span>Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </aside>
+            <!-- End : Sidebar -->
+
+            <!-- Satrt : Main -->
+            <main class="main-wrapper d-flex flex-column flex-grow-1 overflow-auto">
+                    <div class="d-flex justify-flex-end">
+                        <button class="btn btn-success">
+                            <span class="icon filter-icon icon-search"></span>
+                            Filter
+                        </button>
+                    </div>
+                    <!-- Start : Card -->
+                    <div class="card-container">
+                        <div class="card-wrapper d-flex">
+                            <!-- Card 1 -->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-desc">
+                                        <span class="card-text card-title">Scans</span>
+                                        <span class="card-count">350</span>
+                                    </div>
+                                    <div class="card-img scan">
+                                        <!-- <span class="icon">a</span> -->
+                                        <span class="card-icon icon-bg icon-cart"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-desc">
+                                        <span class="card-text card-title">Cost</span>
+                                        <span class="card-count">$345</span>
+                                    </div>
+                                    <div class="card-img list">
+                                        <!-- <span class="icon">a</span> -->
+                                        <span class="card-icon icon-bg icon-cart"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-desc">
+                                        <span class="card-text card-title">Buy Now</span>
+                                        <span class="card-count">350</span>
+                                    </div>
+                                    <div class="card-img cost">
+                                        <!-- <span class="icon">a</span> -->
+                                        <span class="card-icon icon-bg icon-cart"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-desc">
+                                        <span class="card-text card-title">Buy Cheaper</span>
+                                        <span class="card-count">350</span>
+                                    </div>
+                                    <div class="card-img buy-now">
+                                        <!-- <span class="icon">a</span> -->
+                                        <span class="card-icon icon-bg icon-cart"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 5 -->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-desc">
+                                        <span class="card-text card-title">Buy Healthier</span>
+                                        <span class="card-count">350</span>
+                                    </div>
+                                    <div class="card-img buy-cheaper">
+                                        <!-- <span class="icon">a</span> -->
+                                        <span class="card-icon icon-bg icon-cart"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 6 -->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-desc">
+                                        <span class="card-text card-title">List</span>
+                                        <span class="card-count">350</span>
+                                    </div>
+                                    <div class="card-img buy-healthier">
+                                        <!-- <span class="icon">a</span> -->
+                                        <span class="card-icon icon-bg icon-cart"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End : Card -->
+
+                    <!-- Main Heading -->
+                    <div class="heading">
+                        <h1>Recent Activity</h1>
+                    </div>
+
+                    <!-- Start : Table -->
+                    <div class="table-container">
+                        <div class="table-wrapper overflow-auto">
+                            <table class="w-100">
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Date</th>
+                                        <th>Type</th>
+                                        <th>Est.Cosr</th>
+                                        <th>Last</th>
+                                        <th>List</th>
+                                        <th>Auto</th>
+                                        <th>Buy Now</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <figure class="td-img">
+                                                <img class="w-100" src="assets/img/td-img.jpg" alt="img">
+                                            </figure>
+                                            <span>Skippy Peanut Butter 160z</span>
+                                        </td>
+                                        <td>07 Nov,8.35pm</td>
+                                        <td>
+                                            <span class="discarded">Discarded</span>
+                                        </td>
+                                        <td>$40.27</td>
+                                        <td>18 Aug</td>
+                                        <td>Grocery</td>
+                                        <td>No</td>
+                                        <td>
+                                            <figure class="td-img">
+                                                <img class="w-100" src="assets/img/amazon.png" alt="td-img">
+                                            </figure>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <figure class="td-img">
+                                                <img class="w-100" src="assets/img/td-img.jpg" alt="img">
+                                            </figure>
+                                            <span>Skippy Peanut Butter 160z</span>
+                                        </td>
+                                        <td>07 Nov,8.35pm</td>
+                                        <td>
+                                            <span class="want">Want</span>
+                                        </td>
+                                        <td>$40.27</td>
+                                        <td>18 Aug</td>
+                                        <td>Grocery</td>
+                                        <td>No</td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <figure class="td-img">
+                                                <img class="w-100" src="assets/img/td-img.jpg" alt="img">
+                                            </figure>
+                                            <span>Skippy Peanut Butter 160z</span>
+                                        </td>
+                                        <td>07 Nov,8.35pm</td>
+                                        <td>
+                                            <span class="waiting">Waiting</span>
+                                        </td>
+                                        <td>$40.27</td>
+                                        <td>18 Aug</td>
+                                        <td>Grocery</td>
+                                        <td>No</td>
+                                        <td>
+                                            <figure class="td-img">
+                                                <img class="w-100" src="assets/img/amazon.png" alt="td-img">
+                                            </figure>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <figure class="td-img">
+                                                <img class="w-100" src="assets/img/td-img.jpg" alt="img">
+                                            </figure>
+                                            <span>Skippy Peanut Butter 160z</span>
+                                        </td>
+                                        <td>07 Nov,8.35pm</td>
+                                        <td>
+                                            <span class="discarded">Discarded</span>
+                                        </td>
+                                        <td>$40.27</td>
+                                        <td>18 Aug</td>
+                                        <td>Grocery</td>
+                                        <td>No</td>
+                                        <td>
+                                            <figure class="td-img">
+                                                <img class="w-100" src="assets/img/amazon.png" alt="td-img">
+                                            </figure>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <figure class="td-img">
+                                                <img class="w-100" src="assets/img/td-img.jpg" alt="img">
+                                            </figure>
+                                            <span>Skippy Peanut Butter 160z</span>
+                                        </td>
+                                        <td>07 Nov,8.35pm</td>
+                                        <td>
+                                            <span class="cancelled">Cancelled</span>
+                                        </td>
+                                        <td>$40.27</td>
+                                        <td>18 Aug</td>
+                                        <td>Grocery</td>
+                                        <td>No</td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <figure class="td-img">
+                                                <img class="w-100" src="assets/img/td-img.jpg" alt="img">
+                                            </figure>
+                                            <span>Skippy Peanut Butter 160z</span>
+                                        </td>
+                                        <td>07 Nov,8.35pm</td>
+                                        <td>
+                                            <span class="want">Want</span>
+                                        </td>
+                                        <td>$40.27</td>
+                                        <td>18 Aug</td>
+                                        <td>Grocery</td>
+                                        <td>No</td>
+                                        <td>
+                                            <figure class="td-img">
+                                                <img class="w-100" src="assets/img/amazon.png" alt="td-img">
+                                            </figure>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <figure class="td-img">
+                                                <img class="w-100" src="assets/img/td-img.jpg" alt="img">
+                                            </figure>
+                                            <span>Skippy Peanut Butter 160z</span>
+                                        </td>
+                                        <td>07 Nov,8.35pm</td>
+                                        <td>
+                                            <span class="want">Want</span>
+                                        </td>
+                                        <td>$40.27</td>
+                                        <td>18 Aug</td>
+                                        <td>Grocery</td>
+                                        <td>No</td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <figure class="td-img">
+                                                <img class="w-100" src="assets/img/td-img.jpg" alt="img">
+                                            </figure>
+                                            <span>Skippy Peanut Butter 160z</span>
+                                        </td>
+                                        <td>07 Nov,8.35pm</td>
+                                        <td>
+                                            <span class="want">Want</span>
+                                        </td>
+                                        <td>$40.27</td>
+                                        <td>18 Aug</td>
+                                        <td>Grocery</td>
+                                        <td>No</td>
+                                        <td>
+                                            <figure class="td-img">
+                                                <img class="w-100" src="assets/img/amazon.png" alt="td-img">
+                                            </figure>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- End : Table -->
+            </main>
+            <!-- End : Main -->
+        </div>
+        <!-- End : Content Wrapper -->
+
+    </div>
+    <!-- End : Body-Wrapper -->
+</body>
+
+</html>

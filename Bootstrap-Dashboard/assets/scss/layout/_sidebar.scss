@@ -1,0 +1,64 @@
+.sidebar {
+  width: $sidebar-width;
+  flex-shrink: 0;
+  transition: $transition;
+  @include tablet-landscape {
+    transform: translateX(-100%);
+    position: absolute;
+    width: 100%;
+    background: $white;
+  }
+}
+.nav {
+  padding: 1rem 0;
+  &-heading {
+    padding: 8px 24px;
+    font-weight: 600;
+  }
+  .nav- {
+    &list {
+      display: flex;
+      flex-direction: column;
+    }
+    &item {
+      width: 100%;
+      .side-icon {
+        font-size: 1.24rem;
+        padding-right: 1rem;
+      }
+    }
+    &link {
+      color: $gray;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-left: $border-size $white;
+      transition: $transition;
+      &:hover,
+      &.active {
+        color: $green;
+        background: lighten($green, 60%);
+        border-left: $border-size $green;
+        .side-icon {
+          color: $green;
+        }
+      }
+    }
+  }
+}
+
+// Toggle
+#checkmark {
+  display: none;
+}
+#checkmark:checked ~ .sidebar {
+  transform: translateX(-90px);
+  width: 50px;
+  @include tablet-landscape {
+    transform: translateX(0px);
+    position: absolute;
+    width: 100%;
+    background: $white;
+  }
+}

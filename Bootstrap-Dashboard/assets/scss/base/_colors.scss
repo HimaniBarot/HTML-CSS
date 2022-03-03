@@ -1,0 +1,65 @@
+// Theme Primary Color
+$primary: #389cff;
+
+// Mainly use for UI controls like Buttons
+// $secondary: #fbde4a;
+$success : #00b11c;
+$danger : #e55f5f;
+$warning : #f6931e;
+
+// Used for Footer Section
+// $accent: #021a28;
+
+// Mainly use for Normal Text color
+$dark: #000000;
+$white : #ffffff;
+$gray: #989d9e;
+$green : #14a22d;
+
+// Additional Shades of gray color
+$light: #f8fafc;
+$extra-light: #fcfcfc;
+
+// Dedicated for button text only
+$btn-text-primary: $white;
+
+// Body
+$body-bg : #f3f3f3bd;
+$body-color: #000000;
+
+// Card
+$scan : $gray;
+$list : $primary;
+$cost : #1ba96e;
+$buy-now : $warning;
+$buy-cheaper : $primary;
+$buy-healthier : $danger;
+
+// Table
+$discarded: $danger;
+$want : $green;
+$waiting: $warning;
+$cancelled: $dark;
+
+$theme-colors: (
+  "primary": $primary,
+  "danger" : $danger,
+  "warning" : $warning
+);
+
+$card-theme-colors : (
+  "scan": $scan,
+  "list" : $list,
+  "cost" : $cost,
+  "buy-now" : $buy-now,
+  "buy-cheaper" : $buy-cheaper,
+  "buy-healthier" : $buy-healthier
+);
+
+// Table
+$table-theme-colors : (
+  "discarded": $discarded,
+  "want" : $want,
+  "waiting" : $waiting,
+  "cancelled" : $cancelled
+);

@@ -1,0 +1,66 @@
+// Card styles goes here
+
+.card-wrapper {
+  margin: 2rem 0 0 -20px;
+  @include tablet-portrait {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 16.66%;
+    padding-left: 20px;
+    @include sm-desktop {
+      width: 33.33%;
+      margin-bottom: 20px;
+    }
+    @include sm {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+    @include tablet-portrait {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+    .card- {
+      &body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: $white;
+        border-radius: 8px;
+      }
+      &desc {
+        display: flex;
+        flex-direction: column;
+        .card-title {
+          color: $gray;
+          font-size: 0.84rem;
+          font-weight: 600;
+          margin-bottom: 8px;
+        }
+        .card-count {
+          font-weight: 700;
+          font-size: 1.25rem;
+        }
+      }
+      &img {
+        width: 54px;
+        height: 54px;
+        border-radius: $rounded-border;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &icon {
+        font-size: 1.54rem;
+      }
+    }
+  }
+}
+
+@each $card-icon, $clr in $card-theme-colors {
+  .#{$card-icon} {
+    color: $clr;
+    background-color: lighten($clr, 30%);
+  }
+}

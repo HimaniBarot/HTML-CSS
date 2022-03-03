@@ -1,0 +1,18 @@
+.main-wrapper {
+  padding: 1rem 2rem;
+  background-color: $body-bg;
+  @include tablet-portrait {
+    padding: 1rem 1rem;
+  }
+
+  .content-wrapper{
+    position: relative;
+  }
+
+  .heading {
+    margin-top: 2rem;
+    @include sm-desktop {
+      margin: 0;
+    }
+  }
+}
