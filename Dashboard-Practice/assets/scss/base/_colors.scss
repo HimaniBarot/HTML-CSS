@@ -1,0 +1,25 @@
+
+// Body
+$body-bg : #ffffff;
+$body-color: #000000;
+
+// Card
+$sales: #ffeee2;
+$profit: #eefcef;
+$orders: #e6f5fa;
+$visits: #f4f5f9;
+
+$card-bg : #f9f8f3;
+
+$theme-colors: (
+  "primary": $primary,
+  "danger" : $danger,
+  "warning" : $warning
+);
+
+$card-theme-colors : (
+  "sales": $sales,
+  "profit" : $profit,
+  "orders" : $orders,
+  "visits" : $visits
+);

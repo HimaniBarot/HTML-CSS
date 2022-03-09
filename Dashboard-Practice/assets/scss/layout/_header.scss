@@ -1,0 +1,61 @@
+// // Header area style
+// .header-wrapper {
+//   height: $header-height;
+//   // padding: $header-padding;
+//   border-bottom: $border-bottom;
+
+//   .brand-title {
+//     width: $brand-title-width;
+//     padding-left: 2rem;
+//     a {
+//       font-size: 1.6rem;
+//       font-weight: 600;
+//     }
+//   }
+
+//   .header-title {
+//     span {
+//       margin: 2rem;
+//       color: $primary;
+//     }
+//     a {
+//       font-size: 1.34rem;
+//       font-weight: 500;
+//     }
+//   }
+
+//   .header-nav {
+//     .header-nav- {
+//       &item {
+//         margin-left: $margin-right;
+//         .img {
+//           width: 32px;
+//           height: 32px;
+//           margin-right: 1rem;
+//           img {
+//             border-radius: $rounded-border;
+//           }
+//         }
+//         .arrow_right {
+//           font-size: 0.76rem;
+//           padding-bottom: 0.5rem;
+//           transform: rotate(90deg);
+//         }
+//       }
+//       &link {
+//         &.profile {
+//           margin-right: 2rem;
+//         }
+//         .user {
+//           font-size: $base-font-size;
+//           font-weight: 500;
+//         }
+//       }
+//     }
+//   }
+//   .dropdown {
+//     @include mobile {
+//       display: none;
+//     }
+//   }
+// }

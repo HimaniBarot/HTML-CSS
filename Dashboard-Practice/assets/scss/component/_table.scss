@@ -1,0 +1,53 @@
+// .table-container {
+//   background-color: $white;
+//   margin-top: 2rem;
+//   .table-wrapper {
+//     height: $table-height;
+//   }
+//   table {
+//     position: relative;
+//     border-collapse: collapse;
+//     thead {
+//       position: sticky;
+//       top: 0;
+//       background-color: $white;
+//     }
+//     tr {
+//       border-bottom: $border-bottom;
+//       white-space: nowrap;
+//       // @include tablet-portrait{
+//       // }
+//       & th {
+//         text-align: left;
+//         color: $gray;
+//         font-weight: 300;
+//         padding: $th-padding;
+//       }
+//       & td {
+//         font-weight: 500;
+//         padding: $td-padding;
+//       }
+//       & td:nth-child(1) {
+//         display: flex;
+//         align-items: center;
+//       }
+//     }
+//   }
+
+//   .td-img {
+//     display: flex;
+//     align-items: center;
+//     width: 30px;
+//     height: 60px;
+//     margin-right: 0.5rem;
+//   }
+// }
+
+// @each $td-text, $clr in $table-theme-colors {
+//   .#{$td-text} {
+//     padding: 2px 0.5rem;
+//     color: $clr;
+//     background-color: lighten($clr, 30%);
+//     border-radius: 20px;
+//   }
+// }

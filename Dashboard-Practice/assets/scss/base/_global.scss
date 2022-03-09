@@ -1,0 +1,97 @@
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body{
+  background-color: $body-bg;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a, strong{
+    color: black;
+}
+// body {
+//   color: $body-color;
+//   font-size: $base-font-size;
+//   font-family: $font-family;
+//   overflow: hidden;
+// }
+
+// // // start: common
+// // .h-100 {
+// //   height: 100%;
+// // }
+// // .w-100 {
+// //   width: 100%;
+// // }
+
+// // // start: flex proporties
+// // .d-flex {
+// //   display: flex;
+// // }
+// // .align-center {
+// //   align-items: center;
+// // }
+// // .flex {
+// //   &-shrink-0 {
+// //     flex-shrink: 0;
+// //   }
+// //   &-grow-1 {
+// //     flex-grow: 1;
+// //   }
+// //   &-row {
+// //     flex-direction: row;
+// //   }
+// //   &-column {
+// //     flex-direction: column;
+// //   }
+// //   &-wrap {
+// //     flex-wrap: wrap;
+// //   }
+// // }
+// // .justify {
+// //   &-center {
+// //     justify-content: center;
+// //   }
+// //   &-space-between {
+// //     justify-content: space-between;
+// //   }
+// //   &-space-evenly {
+// //     justify-content: space-evenly;
+// //   }
+// //   &-flex-end {
+// //     justify-content: flex-end;
+// //   }
+// // }
+
+// // // List styling
+// // ul {
+// //   padding: 0;
+// //   margin: 0;
+// //   li {
+// //     list-style-type: none;
+// //   }
+// // }
+
+// // // anchor tag
+// // a {
+// //   color: $body-color;
+// //   text-decoration: none;
+// //   cursor: pointer;
+// // }
+
+// Overflow
+.overflow-hidden{
+    overflow: hidden;
+}
+.overflow-auto{
+    overflow: auto;
+}
