@@ -12,68 +12,66 @@
 
 <body>
     <!-- Start : Body-Wrapper -->
-    <div class="h-100 d-flex flex-column ">
+    <!-- <div class="h-100 d-flex flex-column "> -->
 
         <!-- Start : Content Wrapper -->
-        <div class="d-flex flex-grow-1 overflow-hidden">
+        <div class="h-100 d-flex flex-grow-1 overflow-hidden">
             <!-- Start : Sidebar -->
             <aside class="aside">
-                <div class="sidebar h-100">
-                    <div class="d-flex flex-column h-100">
-                        <div class="navbar-brand my-5 d-flex align-items-center">
-                            <span class="icon side-icon icon-search"></span>
-                        </div>
-                        <nav class="nav flex-grow-1">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link active">
-                                        <span class="icon side-icon icon-home"></span>
-                                        <span>Home</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <span class="icon side-icon icon-trophy"></span>
-                                        Projects
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <span class="icon side-icon icon-library"></span>
-                                        <span>Billings</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <span class="icon side-icon icon-user"></span>
-                                        <span>Team Members</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <span class="icon side-icon icon-stats-bars"></span>
-                                        <span>Stats</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <span class="icon side-icon icon-cog"></span>
-                                        <span>Settings</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <nav class="nav nav-user-profile">
-                            <a href="#" class="text-decoration-none">
-                                <div class="sidebar-user-profile d-flex flex-column align-items-center">
-                                    <figure class="user-img">
-                                        <img src="assets/img/user.jpg" alt="User">
-                                    </figure>
-                                    <strong>David Milan</strong>
-                                </div>
-                            </a>
-                        </nav>
+                <div class="sidebar d-flex flex-column h-100">
+                    <div class="navbar-brand ps-4 my-5 d-flex align-items-center">
+                        <span class="icon side-icon icon-search"></span>
                     </div>
+                    <nav class="nav flex-grow-1">
+                        <ul class="navbar-nav">
+                            <li class="nav-item mb-4">
+                                <a href="#" class="nav-link ps-4 pb-2 active">
+                                    <span class="icon pe-3 side-icon icon-home"></span>
+                                    <span class="nav-text">Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-4">
+                                <a href="#" class="nav-link ps-4 pb-2">
+                                    <span class="icon pe-3 side-icon icon-trophy"></span>
+                                    Projects
+                                </a>
+                            </li>
+                            <li class="nav-item mb-4">
+                                <a href="#" class="nav-link ps-4 pb-2">
+                                    <span class="icon pe-3 side-icon icon-library"></span>
+                                    <span class="nav-text">Billings</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-4">
+                                <a href="#" class="nav-link ps-4 pb-2">
+                                    <span class="icon pe-3 side-icon icon-user"></span>
+                                    <span class="nav-text">Team Members</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-4">
+                                <a href="#" class="nav-link ps-4 pb-2">
+                                    <span class="icon pe-3 side-icon icon-stats-bars"></span>
+                                    <span class="nav-text">Stats</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-4">
+                                <a href="#" class="nav-link ps-4 pb-2">
+                                    <span class="icon pe-3 side-icon icon-cog"></span>
+                                    <span class="nav-text">Settings</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="nav nav-user-profile">
+                        <a href="#" class="text-decoration-none">
+                            <div class="sidebar-user-profile pb-5 d-flex flex-column align-items-center">
+                                <figure class="user-img">
+                                    <img src="assets/img/user.jpg" alt="User">
+                                </figure>
+                                <strong>David Milan</strong>
+                            </div>
+                        </a>
+                    </nav>
                 </div>
             </aside>
             <!-- End : Sidebar -->
@@ -81,119 +79,122 @@
             <!-- Satrt : Main -->
             <main class="main-wrapper d-flex flex-grow-1 p-5 overflow-auto">
                 <!-- Start : content -->
-                <div class="col-9 d-flex flex-column flex-grow-1 pe-5">
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search for stats"
+                <div class="d-flex flex-column flex-grow-1 pe-5">
+                    <div class="mt-2 mb-3 position-relative">
+                        <input class="form-search form-control ps-5 py-2 mr-sm-2" type="search" placeholder="Search for stats"
                             aria-label="Search">
-                    </form>
+                            <span class="icon icon-search position-absolute top-50 translate-middle-y ps-3"></span>
+                    </div>
 
                     <!-- Start : Header -->
-                    <div class="d-flex justify-content-between py-4">
+                    <div class="d-flex justify-content-between my-4">
                         <!-- Start : User Info -->
                         <div>
-                            <h1>Hello World !!</h1>
-                            <small>Welcome Back !</small>
+                            <h1 class="m-0">Hello World !!</h1>
+                            <small class="text-muted">Welcome Back !</small>
                         </div>
                         <!-- End : User Info -->
 
                         <!-- Start : Filter Button -->
-                        <div>
-                            <button class="btn">
-                                Filter
-                            </button>
+                        <div class="position-relative d-flex align-items-end">
+                            <input class="form-filter form-control mr-sm-2 px-3" type="search" placeholder="Filter">
+                            <span class="icon icon-equalizer pe-1 position-absolute bottom-0 end-0 translate-middle"></span>
                         </div>
                         <!-- End : Filter Button -->
                     </div>
                     <!-- End : Header -->
 
                     <!-- Start : Cards -->
-                    <div class="card p-3 d-flex flex-row">
+                    <div class="card bg-light bg-opacity-25 p-3 flex-column flex-sm-row">
                         <div class="card-body">
-                            <div class="card-icon mb-4 d-flex align-items-center justify-content-center">
-                                <span class="icon icon-eye"></span>
+                            <div class="card-icon-bg bg-light mb-4 d-flex align-items-center justify-content-center">
+                                <span class="icon text-dark icon-eye"></span>
                             </div>
-                            <h6 class="card-subtitle mb-2 text-muted">Views</h6>
-                            <h5 class="card-title card-count">500</h5>
-                            <small>Per Day</small>
+                            <small class="card-subtitle mb-2 text-muted">Views</small>
+                            <h5 class="card-title card-count m-0 my-2">500</h5>
+                            <small class="card-subtitle text-muted">Per Day</small>
                         </div>
                         <div class="card-body">
-                            <div class="card-icon mb-4 d-flex align-items-center justify-content-center">
-                                <span class="icon icon-compass2"></span>
+                            <div class="card-icon-bg bg-light mb-4 d-flex align-items-center justify-content-center">
+                                <span class="icon text-dark icon-compass2"></span>
                             </div>
-                            <h6 class="card-subtitle mb-2 text-muted">Visits</h6>
-                            <h5 class="card-title card-count">2000</h5>
-                            <small>Per Day</small>
+                            <small class="card-subtitle mb-2 text-muted">Visits</small>
+                            <h5 class="card-title card-count m-0 my-2">2000</h5>
+                            <small class="card-subtitle text-muted">Per Day</small>
                         </div>
                         <div class="card-body">
-                            <div class="card-icon mb-4 d-flex align-items-center justify-content-center">
-                                <span class="icon icon-home"></span>
+                            <div class="card-icon-bg bg-light mb-4 d-flex align-items-center justify-content-center">
+                                <span class="icon text-dark icon-home"></span>
                             </div>
-                            <h6 class="card-subtitle mb-2 text-muted">Orders</h6>
-                            <h5 class="card-title card-count">5100</h5>
-                            <small>Per Day</small>
+                            <small class="card-subtitle mb-2 text-muted">Orders</small>
+                            <h5 class="card-title card-count m-0 my-2">5100</h5>
+                            <small class="card-subtitle text-muted">Per Day</small>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-6 g-4">
-                            <div class="card">
-                                <div class="card-body sales p-4">
+                            <div class="card bg-warning bg-opacity-25 p-3">
+                                <div class="card-body">
+                                    <div class="text-end">
+                                        <p class="icon text-warning icon-arrow-down-right2 m-0"></p>
+                                    </div>
                                     <div class="d-flex justify-content-between">
                                         <div>
                                             <h5 class="card-subtitle mb-2">Sales</h5>
-                                            <small class="text-muted">Total Sales Today</small>
+                                            <small class="card-subtitle text-muted">Total Sales Today</small>
                                             <h5 class="card-title card-count">$500</h5>
                                         </div>
-                                        <div>
-                                            <p class="icon icon-arrow-down-right2"></p>
+                                        <div class="chart d-flex justify-content-center align-items-center">
+                                            <div class="inner-chart bg-warning bg-opacity-25"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 g-4">
-                            <div class="card">
-                                <div class="card-body profit p-4">
+                            <div class="card bg-secondary bg-opacity-25 p-3">
+                                <div class="card-body">
+                                    <div class="text-end">
+                                        <p class="icon text-secondary icon-arrow-down-right2 m-0"></p>
+                                    </div>
                                     <div class="d-flex justify-content-between">
                                         <div>
                                             <h5 class="card-subtitle mb-2">Sales</h5>
-                                            <small class="text-muted">Total Sales Today</small>
+                                            <small class="card-subtitle text-muted">Total Sales Today</small>
                                             <h5 class="card-title card-count">$500</h5>
-                                        </div>
-                                        <div>
-                                            <p class="icon icon-arrow-down-right2"></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 g-4">
-                            <div class="card">
-                                <div class="card-body orders p-4">
+                            <div class="card bg-primary bg-opacity-25 p-3">
+                                <div class="card-body">
+                                    <div class="text-end">
+                                        <p class="icon text-primary icon-arrow-up-right2 m-0"></p>
+                                    </div>
                                     <div class="d-flex justify-content-between">
                                         <div>
                                             <h5 class="card-subtitle mb-2">Sales</h5>
-                                            <small class="text-muted">Total Sales Today</small>
+                                            <small class="card-subtitle text-muted">Total Sales Today</small>
                                             <h5 class="card-title card-count">$500</h5>
-                                        </div>
-                                        <div>
-                                            <p class="icon icon-arrow-up-right2"></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 g-4">
-                            <div class="card">
-                                <div class="card-body visits p-4">
+                            <div class="card bg-dark bg-opacity-10 p-3">
+                                <div class="card-body">
+                                    <div class="text-end">
+                                        <p class="icon text-dark icon-arrow-up-right2 m-0"></p>
+                                    </div>
                                     <div class="d-flex justify-content-between">
                                         <div>
                                             <h5 class="card-subtitle mb-2">Sales</h5>
-                                            <small class="text-muted">Total Sales Today</small>
+                                            <small class="card-subtitle text-muted">Total Sales Today</small>
                                             <h5 class="card-title card-count">$500</h5>
-                                        </div>
-                                        <div>
-                                            <p class="icon icon-arrow-up-right2"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -207,44 +208,46 @@
                 <!-- End : content -->
 
                 <!-- Start : Sales Revenew -->
-                <div class="sales-reveneu col-3 p-3">
-                    <div class="d-flex flex-column p-5">
-                        <h5>Sales Revenue</h5>
-                        <div class="pt-4">
-                            <div class="pb-4 d-flex justify-content-between">
-                                <div class="sales-reveneu-icon d-flex align-items-center justify-content-center">
-                                    <span class="icon-cog"></span>
+                <div class="d-flex">
+                    <div class="sales-reveneu p-3">
+                        <div class="d-flex flex-column p-5">
+                            <h5 class="sales-text">Sales Revenue</h5>
+                            <div class="pt-4">
+                                <div class="pb-5 d-flex justify-content-between">
+                                    <div class="sales-reveneu-icon d-flex align-items-center justify-content-center">
+                                        <span class="sales-icon icon-cog"></span>
+                                    </div>
+                                    <div>
+                                        <h5 class="sales-text">230k</h5>
+                                        <small class="text-muted">Sales</small>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h5>230k</h5>
-                                    <small class="text-muted">Sales</small>
+                                <div class="pb-5 d-flex justify-content-between">
+                                    <div class="sales-reveneu-icon d-flex align-items-center justify-content-center">
+                                        <span class="sales-icon icon-user"></span>
+                                    </div>
+                                    <div>
+                                        <h5 class="sales-text">8.549k</h5>
+                                        <small class="text-muted">Customers</small>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="pb-4 d-flex justify-content-between">
-                                <div class="sales-reveneu-icon d-flex align-items-center justify-content-center">
-                                    <span class="icon-user"></span>
+                                <div class="pb-5 d-flex justify-content-between">
+                                    <div class="sales-reveneu-icon d-flex align-items-center justify-content-center">
+                                        <span class="sales-icon icon-file-text2"></span>
+                                    </div>
+                                    <div>
+                                        <h5 class="sales-text">1.423k</h5>
+                                        <small class="text-muted">Products</small>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h5>8.549k</h5>
-                                    <small class="text-muted">Customers</small>
-                                </div>
-                            </div>
-                            <div class="pb-4 d-flex justify-content-between">
-                                <div class="sales-reveneu-icon d-flex align-items-center justify-content-center">
-                                    <span class="icon-file-text2"></span>
-                                </div>
-                                <div>
-                                    <h5>1.423k</h5>
-                                    <small class="text-muted">Products</small>
-                                </div>
-                            </div>
-                            <div class="pb-4 d-flex justify-content-between">
-                                <div class="sales-reveneu-icon d-flex align-items-center justify-content-center">
-                                    <span class="icon-pie-chart"></span>
-                                </div>
-                                <div>
-                                    <h5>$9745</h5>
-                                    <small class="text-muted">Reveneu</small>
+                                <div class="pb-5 d-flex justify-content-between">
+                                    <div class="sales-reveneu-icon d-flex align-items-center justify-content-center">
+                                        <span class="sales-icon icon-pie-chart"></span>
+                                    </div>
+                                    <div>
+                                        <h5 class="sales-text">$9745</h5>
+                                        <small class="text-muted">Reveneu</small>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -256,7 +259,7 @@
         </div>
         <!-- End : Content Wrapper -->
 
-    </div>
+    <!-- </div> -->
     <!-- End : Body-Wrapper -->
 </body>
 

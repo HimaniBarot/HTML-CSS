@@ -1,25 +1,18 @@
 
+
+$primary : #74c1db;
+$secondary : #7bcd81;
+$warning : #d68148;
+$dark : #000000;
+$light : #e4e0d5;
+
 // Body
 $body-bg : #ffffff;
-$body-color: #000000;
+$body-color: $dark;
+
+// Sidebar
+$nav-border-color : gray;
+$nav-link-color : $dark;
 
 // Card
-$sales: #ffeee2;
-$profit: #eefcef;
-$orders: #e6f5fa;
-$visits: #f4f5f9;
-
-$card-bg : #f9f8f3;
-
-$theme-colors: (
-  "primary": $primary,
-  "danger" : $danger,
-  "warning" : $warning
-);
-
-$card-theme-colors : (
-  "sales": $sales,
-  "profit" : $profit,
-  "orders" : $orders,
-  "visits" : $visits
-);
+// $card-bg : #f9f8f3;

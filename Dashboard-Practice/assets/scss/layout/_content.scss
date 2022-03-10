@@ -26,11 +26,18 @@
   background-color: #000000;
   border: none;
   border-radius: 40px;
+  width: 400px;
   .sales-reveneu-icon {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     color: $dark;
     background-color: $white;
     border-radius: 50%;
   }
+  .sales-icon{
+    font-size: 1.5rem;
+}
+.sales-text{
+  font-size: 1.5rem;
+}
 }
