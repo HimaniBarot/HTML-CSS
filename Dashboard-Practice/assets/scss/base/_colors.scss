@@ -1,5 +1,3 @@
-
-
 $primary : #74c1db;
 $secondary : #7bcd81;
 $warning : #d68148;
@@ -10,9 +8,16 @@ $light : #e4e0d5;
 $body-bg : #ffffff;
 $body-color: $dark;
 
+// Border
+$border-color : #c9c9c9;
+
 // Sidebar
-$nav-border-color : gray;
+$nav-border-color : $border-color;
 $nav-link-color : $dark;
+
+
+// Image
+$img-border-color : $border-color;
 
 // Card
 // $card-bg : #f9f8f3;

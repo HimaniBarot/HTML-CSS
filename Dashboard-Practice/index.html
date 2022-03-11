@@ -14,250 +14,311 @@
     <!-- Start : Body-Wrapper -->
     <!-- <div class="h-100 d-flex flex-column "> -->
 
-        <!-- Start : Content Wrapper -->
-        <div class="h-100 d-flex flex-grow-1 overflow-hidden">
-            <!-- Start : Sidebar -->
-            <aside class="aside">
-                <div class="sidebar d-flex flex-column h-100">
-                    <div class="navbar-brand ps-4 my-5 d-flex align-items-center">
-                        <span class="icon side-icon icon-search"></span>
+    <!-- Start : Content Wrapper -->
+    <div class="h-100 d-flex flex-grow-1 overflow-hidden">
+        <!-- Start : Sidebar -->
+        <!-- <input type="checkbox" id="dropdown-lable"> -->
+        <aside class="aside d-none d-md-block">
+            <div class="sidebar d-flex flex-column h-100">
+                <!-- <div class="navbar-brand ps-4 my-5 d-flex align-items-center">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div> -->
+                <div class="navbar-brand ps-4 my-5 d-flex align-items-center">
+                    <span class="icon side-icon icon-arrow-up-right2"></span>
+                </div>
+                <nav class="nav flex-grow-1 overflow-auto">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mb-4">
+                            <a href="#" class="nav-link ps-4 pb-2 active">
+                                <span class="icon pe-3 icon-home"></span>
+                                <span class="nav-text">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-4">
+                            <a href="#" class="nav-link ps-4 pb-2">
+                                <span class="icon pe-3 icon-trophy"></span>
+                                Projects
+                            </a>
+                        </li>
+                        <li class="nav-item mb-4">
+                            <a href="#" class="nav-link ps-4 pb-2">
+                                <span class="icon pe-3 icon-library"></span>
+                                <span class="nav-text">Billings</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-4">
+                            <a href="#" class="nav-link ps-4 pb-2">
+                                <span class="icon pe-3 icon-user"></span>
+                                <span class="nav-text">Team Members</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-4">
+                            <a href="#" class="nav-link ps-4 pb-2">
+                                <span class="icon pe-3 icon-stats-bars"></span>
+                                <span class="nav-text">Stats</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-4">
+                            <a href="#" class="nav-link ps-4 pb-2">
+                                <span class="icon pe-3 icon-cog"></span>
+                                <span class="nav-text">Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="nav nav-user-profile">
+                    <a href="#" class="text-decoration-none">
+                        <div class="sidebar-user-profile pb-5 d-flex flex-column align-items-center">
+                            <figure class="user-img position-relative">
+                                <img src="assets/img/user.jpg" alt="User">
+                            </figure>
+                            <strong>David Milan</strong>
+                            <div class="badge"></div>
+                        </div>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+        <!-- End : Sidebar -->
+
+        <!-- Satrt : Main -->
+        <main class="main-wrapper d-flex flex-column flex-xl-row flex-grow-1 p-3 p-xl-5 overflow-auto">
+            <!-- Start : content -->
+            <div class="d-flex flex-column flex-grow-1 me-0 me-xl-5">
+                <div class="mt-2 mb-3 w-75 position-relative">
+                    <input class="form-search form-control ps-5 py-2 mr-sm-2" type="search"
+                        placeholder="Search for stats" aria-label="Search">
+                    <span class="icon icon-search position-absolute top-50 translate-middle-y ps-3"></span>
+                </div>
+
+                <!-- Start : Header -->
+                <div class="d-flex justify-content-between my-4">
+                    <!-- Start : User Info -->
+                    <div>
+                        <h1 class="m-0">Hello World !!</h1>
+                        <small class="text-muted">Welcome Back !</small>
                     </div>
-                    <nav class="nav flex-grow-1">
-                        <ul class="navbar-nav">
-                            <li class="nav-item mb-4">
-                                <a href="#" class="nav-link ps-4 pb-2 active">
-                                    <span class="icon pe-3 side-icon icon-home"></span>
-                                    <span class="nav-text">Home</span>
-                                </a>
-                            </li>
-                            <li class="nav-item mb-4">
-                                <a href="#" class="nav-link ps-4 pb-2">
-                                    <span class="icon pe-3 side-icon icon-trophy"></span>
-                                    Projects
-                                </a>
-                            </li>
-                            <li class="nav-item mb-4">
-                                <a href="#" class="nav-link ps-4 pb-2">
-                                    <span class="icon pe-3 side-icon icon-library"></span>
-                                    <span class="nav-text">Billings</span>
-                                </a>
-                            </li>
-                            <li class="nav-item mb-4">
-                                <a href="#" class="nav-link ps-4 pb-2">
-                                    <span class="icon pe-3 side-icon icon-user"></span>
-                                    <span class="nav-text">Team Members</span>
-                                </a>
-                            </li>
-                            <li class="nav-item mb-4">
-                                <a href="#" class="nav-link ps-4 pb-2">
-                                    <span class="icon pe-3 side-icon icon-stats-bars"></span>
-                                    <span class="nav-text">Stats</span>
-                                </a>
-                            </li>
-                            <li class="nav-item mb-4">
-                                <a href="#" class="nav-link ps-4 pb-2">
-                                    <span class="icon pe-3 side-icon icon-cog"></span>
-                                    <span class="nav-text">Settings</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav class="nav nav-user-profile">
-                        <a href="#" class="text-decoration-none">
-                            <div class="sidebar-user-profile pb-5 d-flex flex-column align-items-center">
-                                <figure class="user-img">
-                                    <img src="assets/img/user.jpg" alt="User">
-                                </figure>
-                                <strong>David Milan</strong>
+                    <!-- End : User Info -->
+
+                    <!-- Start : Filter Button -->
+                    <div class="position-relative d-flex align-items-end">
+                        <input class="form-filter form-control mr-sm-2 px-3" type="search" placeholder="Filter">
+                        <span class="icon icon-equalizer pe-1"></span>
+                    </div>
+                    <!-- End : Filter Button -->
+                </div>
+                <!-- End : Header -->
+
+                <!-- Start : Cards -->
+                <div class="card bg-light bg-opacity-25 p-3 flex-column flex-sm-row">
+                    <div class="card-body">
+                        <div class="card-icon-bg bg-light mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon text-dark icon-eye"></span>
+                        </div>
+                        <small class="card-subtitle mb-2 text-muted">Views</small>
+                        <h5 class="card-title card-rate m-0 my-2">500</h5>
+                        <small class="card-subtitle text-muted">Per Day</small>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon-bg bg-light mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon text-dark icon-compass2"></span>
+                        </div>
+                        <small class="card-subtitle mb-2 text-muted">Visits</small>
+                        <h5 class="card-title card-rate m-0 my-2">2000</h5>
+                        <small class="card-subtitle text-muted">Per Day</small>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon-bg bg-light mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon text-dark icon-home"></span>
+                        </div>
+                        <small class="card-subtitle mb-2 text-muted">Orders</small>
+                        <h5 class="card-title card-rate m-0 my-2">5100</h5>
+                        <small class="card-subtitle text-muted">Per Day</small>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 col-md-6 g-4">
+                        <div class="card bg-warning bg-opacity-25 p-0 p-lg-3">
+                            <div class="card-body">
+                                <div class="text-end">
+                                    <p class="icon text-warning icon-arrow-down-right2 m-0"></p>
+                                </div>
+                                <div
+                                    class="d-flex flex-column-reverse align-items-center flex-lg-row align-items-lg-start justify-content-between">
+                                    <div class="mt-4 m-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                                        <h5 class="card-subtitle mb-1">Sales</h5>
+                                        <small class="card-subtitle text-muted">Total Sales Today</small>
+                                        <h5 class="card-title m-0 mt-2 card-statestic-text card-count">$500</h5>
+                                    </div>
+                                    <!-- Progress Bar -->
+                                    <div>
+                                        <div class="progress yellow">
+                                            <span class="progress-left">
+                                                <span class="progress-bar"></span>
+                                            </span>
+                                            <span class="progress-right">
+                                                <span class="progress-bar"></span>
+                                            </span>
+                                            <div class="progress-value">60%</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </nav>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 g-4">
+                        <div class="card bg-secondary bg-opacity-25 p-0 p-lg-3">
+                            <div class="card-body">
+                                <div class="text-end">
+                                    <p class="icon text-secondary icon-arrow-down-right2 m-0"></p>
+                                </div>
+                                <div
+                                    class="d-flex flex-column-reverse align-items-center flex-lg-row align-items-lg-start justify-content-between">
+                                    <div class="mt-4 m-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                                        <h5 class="card-subtitle mb-1">Sales</h5>
+                                        <small class="card-subtitle text-muted">Total Sales Today</small>
+                                        <h5 class="card-title m-0 mt-2 card-statestic-text card-count">$500</h5>
+                                    </div>
+                                    <!-- Progress Bar -->
+                                    <div>
+                                        <div class="progress yellow">
+                                            <span class="progress-left">
+                                                <span class="progress-bar"></span>
+                                            </span>
+                                            <span class="progress-right">
+                                                <span class="progress-bar"></span>
+                                            </span>
+                                            <div class="progress-value">60%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 g-4">
+                        <div class="card bg-primary bg-opacity-25 p-0 p-lg-3">
+                            <div class="card-body">
+                                <div class="text-end">
+                                    <p class="icon text-primary icon-arrow-down-right2 m-0"></p>
+                                </div>
+                                <div
+                                    class="d-flex flex-column-reverse align-items-center flex-lg-row align-items-lg-start justify-content-between">
+                                    <div class="mt-4 m-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                                        <h5 class="card-subtitle mb-1">Sales</h5>
+                                        <small class="card-subtitle text-muted">Total Sales Today</small>
+                                        <h5 class="card-title m-0 mt-2 card-statestic-text card-count">$500</h5>
+                                    </div>
+                                    <!-- Progress Bar -->
+                                    <div>
+                                        <div class="progress yellow">
+                                            <span class="progress-left">
+                                                <span class="progress-bar"></span>
+                                            </span>
+                                            <span class="progress-right">
+                                                <span class="progress-bar"></span>
+                                            </span>
+                                            <div class="progress-value">60%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 g-4">
+                        <div class="card bg-dark bg-opacity-10 p-0 p-lg-3">
+                            <div class="card-body">
+                                <div class="text-end">
+                                    <p class="icon text-dark icon-arrow-down-right2 m-0"></p>
+                                </div>
+                                <div
+                                    class="d-flex flex-column-reverse align-items-center flex-lg-row align-items-lg-start justify-content-between">
+                                    <div class="mt-4 m-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                                        <h5 class="card-subtitle mb-1">Sales</h5>
+                                        <small class="card-subtitle text-muted">Total Sales Today</small>
+                                        <h5 class="card-title m-0 mt-2 card-statestic-text card-count">$500</h5>
+                                    </div>
+                                    <!-- Progress Bar -->
+                                    <div>
+                                        <div class="progress yellow">
+                                            <span class="progress-left">
+                                                <span class="progress-bar"></span>
+                                            </span>
+                                            <span class="progress-right">
+                                                <span class="progress-bar"></span>
+                                            </span>
+                                            <div class="progress-value">60%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End : Cards -->
+            </div>
+            <!-- </div> -->
+            <!-- End : content -->
+
+            <!-- Start : Sales Revenew -->
+            <aside class="nav-secondary px-5 py-3 mt-5 mt-xl-0 d-flex flex-column">
+                <div class="pt-3">
+                    <h5 class=" m-0 pb-3">Sales Revenue</h5>
+                    <div class="py-3 d-flex align-items-center">
+                        <div class="nav-secondary-icon me-3 d-flex align-items-center justify-content-center">
+                            <span class="icon icon-cog"></span>
+                        </div>
+                        <div class="ps-4">
+                            <!-- <small class="text-muted">Sales</small>
+                            <h5>230k</h5> -->
+                            <small class="nav-secondary-text">230k</small>
+                            <h5 class="nav-secondary-title text-muted m-0 mt-2">Sales</h5>
+                        </div>
+                    </div>
+                    <div class="py-3 d-flex align-items-center">
+                        <div class="nav-secondary-icon me-3 d-flex align-items-center justify-content-center">
+                            <span class="icon icon-user"></span>
+                        </div>
+                        <div class="ps-4">
+                            <small class="nav-secondary-text">8.549k</small>
+                            <h5 class="nav-secondary-title text-muted m-0 mt-2">Customers</h5>
+                            <!-- <small class="text-muted">Customers</small>
+                            <h5>8.549k</h5> -->
+                        </div>
+                    </div>
+                    <div class="py-3 d-flex align-items-center">
+                        <div class="nav-secondary-icon me-3 d-flex align-items-center justify-content-center">
+                            <span class="icon icon-file-text2"></span>
+                        </div>
+                        <div class="ps-4">
+                            <!-- <small class="text-muted">Products</small>
+                            <h5>1.423k</h5> -->
+                            <small class="nav-secondary-text">1.423k</small>
+                            <h5 class="nav-secondary-title text-muted m-0 mt-2">Products</h5>
+                        </div>
+                    </div>
+                    <div class="py-3 d-flex align-items-center">
+                        <div class="nav-secondary-icon me-3 d-flex align-items-center justify-content-center">
+                            <span class="icon icon-pie-chart"></span>
+                        </div>
+                        <div class="ps-4">
+                            <!-- <small class="text-muted">Revenue</small>
+                            <h5>$9745</h5> -->
+                            <small class="nav-secondary-text">$9745</small>
+                            <h5 class="nav-secondary-title text-muted m-0 mt-2">Revenue</h5>
+                        </div>
+                    </div>
                 </div>
             </aside>
-            <!-- End : Sidebar -->
-
-            <!-- Satrt : Main -->
-            <main class="main-wrapper d-flex flex-grow-1 p-5 overflow-auto">
-                <!-- Start : content -->
-                <div class="d-flex flex-column flex-grow-1 pe-5">
-                    <div class="mt-2 mb-3 position-relative">
-                        <input class="form-search form-control ps-5 py-2 mr-sm-2" type="search" placeholder="Search for stats"
-                            aria-label="Search">
-                            <span class="icon icon-search position-absolute top-50 translate-middle-y ps-3"></span>
-                    </div>
-
-                    <!-- Start : Header -->
-                    <div class="d-flex justify-content-between my-4">
-                        <!-- Start : User Info -->
-                        <div>
-                            <h1 class="m-0">Hello World !!</h1>
-                            <small class="text-muted">Welcome Back !</small>
-                        </div>
-                        <!-- End : User Info -->
-
-                        <!-- Start : Filter Button -->
-                        <div class="position-relative d-flex align-items-end">
-                            <input class="form-filter form-control mr-sm-2 px-3" type="search" placeholder="Filter">
-                            <span class="icon icon-equalizer pe-1 position-absolute bottom-0 end-0 translate-middle"></span>
-                        </div>
-                        <!-- End : Filter Button -->
-                    </div>
-                    <!-- End : Header -->
-
-                    <!-- Start : Cards -->
-                    <div class="card bg-light bg-opacity-25 p-3 flex-column flex-sm-row">
-                        <div class="card-body">
-                            <div class="card-icon-bg bg-light mb-4 d-flex align-items-center justify-content-center">
-                                <span class="icon text-dark icon-eye"></span>
-                            </div>
-                            <small class="card-subtitle mb-2 text-muted">Views</small>
-                            <h5 class="card-title card-count m-0 my-2">500</h5>
-                            <small class="card-subtitle text-muted">Per Day</small>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-icon-bg bg-light mb-4 d-flex align-items-center justify-content-center">
-                                <span class="icon text-dark icon-compass2"></span>
-                            </div>
-                            <small class="card-subtitle mb-2 text-muted">Visits</small>
-                            <h5 class="card-title card-count m-0 my-2">2000</h5>
-                            <small class="card-subtitle text-muted">Per Day</small>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-icon-bg bg-light mb-4 d-flex align-items-center justify-content-center">
-                                <span class="icon text-dark icon-home"></span>
-                            </div>
-                            <small class="card-subtitle mb-2 text-muted">Orders</small>
-                            <h5 class="card-title card-count m-0 my-2">5100</h5>
-                            <small class="card-subtitle text-muted">Per Day</small>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-6 g-4">
-                            <div class="card bg-warning bg-opacity-25 p-3">
-                                <div class="card-body">
-                                    <div class="text-end">
-                                        <p class="icon text-warning icon-arrow-down-right2 m-0"></p>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h5 class="card-subtitle mb-2">Sales</h5>
-                                            <small class="card-subtitle text-muted">Total Sales Today</small>
-                                            <h5 class="card-title card-count">$500</h5>
-                                        </div>
-                                        <div class="chart d-flex justify-content-center align-items-center">
-                                            <div class="inner-chart bg-warning bg-opacity-25"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 g-4">
-                            <div class="card bg-secondary bg-opacity-25 p-3">
-                                <div class="card-body">
-                                    <div class="text-end">
-                                        <p class="icon text-secondary icon-arrow-down-right2 m-0"></p>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h5 class="card-subtitle mb-2">Sales</h5>
-                                            <small class="card-subtitle text-muted">Total Sales Today</small>
-                                            <h5 class="card-title card-count">$500</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 g-4">
-                            <div class="card bg-primary bg-opacity-25 p-3">
-                                <div class="card-body">
-                                    <div class="text-end">
-                                        <p class="icon text-primary icon-arrow-up-right2 m-0"></p>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h5 class="card-subtitle mb-2">Sales</h5>
-                                            <small class="card-subtitle text-muted">Total Sales Today</small>
-                                            <h5 class="card-title card-count">$500</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 g-4">
-                            <div class="card bg-dark bg-opacity-10 p-3">
-                                <div class="card-body">
-                                    <div class="text-end">
-                                        <p class="icon text-dark icon-arrow-up-right2 m-0"></p>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h5 class="card-subtitle mb-2">Sales</h5>
-                                            <small class="card-subtitle text-muted">Total Sales Today</small>
-                                            <h5 class="card-title card-count">$500</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- End : Cards -->
-                </div>
-                <!-- </div> -->
-                <!-- End : content -->
-
-                <!-- Start : Sales Revenew -->
-                <div class="d-flex">
-                    <div class="sales-reveneu p-3">
-                        <div class="d-flex flex-column p-5">
-                            <h5 class="sales-text">Sales Revenue</h5>
-                            <div class="pt-4">
-                                <div class="pb-5 d-flex justify-content-between">
-                                    <div class="sales-reveneu-icon d-flex align-items-center justify-content-center">
-                                        <span class="sales-icon icon-cog"></span>
-                                    </div>
-                                    <div>
-                                        <h5 class="sales-text">230k</h5>
-                                        <small class="text-muted">Sales</small>
-                                    </div>
-                                </div>
-                                <div class="pb-5 d-flex justify-content-between">
-                                    <div class="sales-reveneu-icon d-flex align-items-center justify-content-center">
-                                        <span class="sales-icon icon-user"></span>
-                                    </div>
-                                    <div>
-                                        <h5 class="sales-text">8.549k</h5>
-                                        <small class="text-muted">Customers</small>
-                                    </div>
-                                </div>
-                                <div class="pb-5 d-flex justify-content-between">
-                                    <div class="sales-reveneu-icon d-flex align-items-center justify-content-center">
-                                        <span class="sales-icon icon-file-text2"></span>
-                                    </div>
-                                    <div>
-                                        <h5 class="sales-text">1.423k</h5>
-                                        <small class="text-muted">Products</small>
-                                    </div>
-                                </div>
-                                <div class="pb-5 d-flex justify-content-between">
-                                    <div class="sales-reveneu-icon d-flex align-items-center justify-content-center">
-                                        <span class="sales-icon icon-pie-chart"></span>
-                                    </div>
-                                    <div>
-                                        <h5 class="sales-text">$9745</h5>
-                                        <small class="text-muted">Reveneu</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End : Sales Revenew -->
-            </main>
-            <!-- End : Main -->
-        </div>
-        <!-- End : Content Wrapper -->
+            <!-- End : Sales Revenew -->
+        </main>
+        <!-- End : Main -->
+    </div>
+    <!-- End : Content Wrapper -->
 
     <!-- </div> -->
     <!-- End : Body-Wrapper -->

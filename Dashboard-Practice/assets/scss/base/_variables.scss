@@ -4,6 +4,7 @@
 // $base-font-size: 1rem;
 // $font-family: "Poppins", sans-serif;
 $font-family-base: "Poppins", sans-serif;
+$headings-font-weight : 600;
 
 
 // Icons
@@ -21,8 +22,10 @@ $nav-link-font-size: 1rem;
 $nav-tabs-border-width: $border-size;
 
 // Transition
-$transition: all 0.1s ease-in;
+$transition: all 0.1s ease-in-out;
 
 // Card
 $card-icon-size: $icon-base-font-size;
-$card-count-weight: 600;
+
+// Image
+$img-border-size: $border-size;

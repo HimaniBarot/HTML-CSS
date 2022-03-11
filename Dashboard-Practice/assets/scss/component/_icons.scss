@@ -1,3 +1,9 @@
 .icon {
+  display: block;
   font-size: $icon-base-font-size;
+}
+.icon-equalizer {
+  position: absolute;
+  top: 56.5%;
+  right: 10.5%;
 }
