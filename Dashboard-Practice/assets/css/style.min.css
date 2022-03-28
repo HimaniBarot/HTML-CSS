@@ -8824,7 +8824,7 @@ textarea.form-control-lg {
 }
 
 .nav-secondary {
-  width: 350px;
+  width: 340px;
   color: #fff;
   background-color: #000000;
   border: none;
@@ -8901,13 +8901,63 @@ textarea.form-control-lg {
 }
 
 .nav .nav-link:hover, .nav .nav-link.active {
-  font-weight: bolder;
   border-left: 4px solid #000000;
+}
+
+.nav .nav-link.active {
+  font-weight: bolder;
 }
 
 .line {
   width: 10px;
   height: 10px;
   background-color: #000000;
+}
+
+@media (max-width: 767.98px) {
+  .aside {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+  }
+  #dropdown-lable:checked ~ .aside {
+    position: absolute;
+    width: 100%;
+    z-index: 1111;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar-button {
+  visibility: hidden;
+  height: 4px;
+  width: 4px;
+}
+
+::-webkit-scrollbar-button:vertical:start:increment, ::-webkit-scrollbar-button:vertical:end:decrement, ::-webkit-scrollbar-button:horizontal:start:increment, ::-webkit-scrollbar-button:horizontal:end:decrement {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+  ::-webkit-scrollbar-button {
+    height: 2px;
+    width: 2px;
+  }
 }
 /*# sourceMappingURL=style.min.css.map */

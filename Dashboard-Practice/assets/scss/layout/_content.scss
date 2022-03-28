@@ -1,28 +1,9 @@
-// .main-wrapper {
-//   padding: 1rem 2rem;
-//   background-color: $body-bg;
-//   @include tablet-portrait {
-//     padding: 1rem 1rem;
-//   }
-
-//   .content-wrapper{
-//     position: relative;
-//   }
-
-//   .heading {
-//     margin-top: 2rem;
-//     @include sm-desktop {
-//       margin: 0;
-//     }
-//   }
-// }
-
 .aside {
   flex: 0 0 250px;
 }
 
 .nav-secondary {
-  width: 350px;
+  width: 340px;
   color: $white;
   background-color: #000000;
   border: none;

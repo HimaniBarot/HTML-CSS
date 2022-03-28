@@ -44,8 +44,11 @@
       transition: $transition;
       &:hover,
       &.active {
-        font-weight: $font-weight-bolder;
         border-left: 4px solid $dark;
+      }
+      &.active{
+        
+        font-weight: $font-weight-bolder;
       }
     }
   }
@@ -54,4 +57,30 @@
   width: 10px;
   height: 10px;
   background-color: #000000;
+}
+
+@include media-breakpoint-down(md) {
+  .aside {
+    transition: $transition-base;
+    transform: translateX(-250px);
+  }
+  #dropdown-lable:checked ~ .aside{
+    // background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1111;
+    transform: translateX(0);
+  }
+  // #checkmark:checked ~ .sidebar {
+  //   width: 70px;
+  //   .nav-link {
+  //     width: 56px;
+  //     transition: $transition-base;
+  //   }
+  //   .header-title,
+  //   span {
+  //     transform: translateX(80px);
+  //     opacity: 0;
+  //   }
+  // }
 }
